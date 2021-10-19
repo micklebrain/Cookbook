@@ -6,76 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Cookbook {
-    var elotaRecipe = Recipe(name: "Elota", ingredients: ["Corn", "Red Chilli flakes"], steps: [])
-    
-    var bakedSalmonRecipe = Recipe(name: "Baked Salmon", ingredients: ["Salmon", "Salt", "Pepper"], steps: ["1. Add Salt and pepper", "2. Grill Salmon"])
-    
-    var steakAndPotatoesRecipe = Recipe(name: "Steak and Potatoes",
-                                        ingredients: ["Steak",
-                                                      "Potatoes",
-                                                      "Salt",
-                                                      "Pepper"],
-                                        steps: [""])
-    
-    var chickenTikkaMasala = Recipe(name: "Chicken Tikka Masala",
-                                    ingredients: ["2 lbs of chicken breast",
-                                                  "14 oz of tomato sauce",
-                                                  "1 cup of heavy creamy",
-                                                  "1 1/2 cups of yellow onion, diced",
-                                                  "chopped cilantro for garnish",
-                                                  "3 garlic cloves, minced",
-                                                  "6 tbsp of butter, divided into 2 tbsp chunks",
-                                                  "1 tsp of cumin",
-                                                  "salt and pepper",
-                                                  "1 tsp of chili powder",
-                                                  "1/2 tsp of ground turmeric",
-                                                  "3 tsp of garam masala",
-                                                  "1 tsp of cayenne pepper",
-                                                  "1 Tbsp. of grated ginger"],
-                                    steps: [""])
-    
-    var Soondubu = Recipe(name: "Soondubu",
-                          ingredients: ["bok choy",
-                                        "egg",
-                                        "minced garlic",
-                                        "minced pork",
-                                        "mushrooms",
-                                        "red chili flakes",
-                                        "shrimp",
-                                        "spring onion",
-                                        "soft tofu",
-                                        "soy sauce",
-                                        "vegetable & seasame oil",
-                                        "white onion"],
-                          
-                          steps: ["1. chop spring onions",
-                                  "2. mince pork",
-                                  
-                                  "3. add oil",
-                                  "4. add (chopped) spring onions",
-                                  "5. add (minced) pork",
-                                  "6. add (diced) white onions",
-                                  "7. add (minced) garlic",
-                                  "8. add red chili flakes",
-                                  "9. add sugar",
-                                  "10. add soy sauce",
-                                  
-                                  "11. add paste",
-                                  "12. add mushrooms",
-                                  "13. crack egg in",
-                                  "14. add soft tofu",
-                                  "15. add bok choy"])
-    
-    var brocolliCheddarSoup = Recipe(name: "Brocolli Cheddar Soup",
-                                     ingredients: ["Broccoli florets", "Chicken Stock", "Heavy creamy"],
-                                     steps: [""])
-    
-    var banhXeo = Recipe(name: "Banh Xeo",
-                         ingredients: ["Shrimp", "Cocunut cream", "Green onion", "Pork belly", "Onion", "bean sprouts", "Dry mung beans", "Mustard greens", "Mint", "Cilantro", "Vietnamese perilla"],
-                         steps: [""])
-    
     var recipes: [Recipe]  = []
     
     init() {
@@ -83,6 +16,89 @@ class Cookbook {
     }
     
     func addRecipes() {
-        self.recipes = [self.Soondubu, self.chickenTikkaMasala, self.steakAndPotatoesRecipe, self.bakedSalmonRecipe, self.elotaRecipe, self.brocolliCheddarSoup, self.banhXeo]
+        
+        let elotaRecipe = Recipe(name: "Elota", ingredients: ["Corn", "Red Chilli flakes"], recipeSteps: [])
+        
+        let bakedSalmonRecipe = Recipe(name: "Baked Salmon",
+                                       ingredients: ["Salmon", "Salt", "Pepper"],
+//                                       steps: ["1. Add Salt and pepper", "2. Grill Salmon"],
+                                       recipeSteps: [])
+        
+        let steakAndPotatoesRecipe = Recipe(name: "Steak and Potatoes",
+                                            ingredients: ["Steak",
+                                                          "Potatoes",
+                                                          "Salt",
+                                                          "Pepper"],
+                                            recipeSteps: [])
+        
+        let chickenTikkaMasala = Recipe(name: "Chicken Tikka Masala",
+                                        ingredients: ["2 lbs of chicken breast",
+                                                      "14 oz of tomato sauce",
+                                                      "1 cup of heavy creamy",
+                                                      "1 1/2 cups of yellow onion, diced",
+                                                      "chopped cilantro for garnish",
+                                                      "3 garlic cloves, minced",
+                                                      "6 tbsp of butter, divided into 2 tbsp chunks",
+                                                      "1 tsp of cumin",
+                                                      "salt and pepper",
+                                                      "1 tsp of chili powder",
+                                                      "1/2 tsp of ground turmeric",
+                                                      "3 tsp of garam masala",
+                                                      "1 tsp of cayenne pepper",
+                                                      "1 Tbsp. of grated ginger"],
+                                        recipeSteps: [])
+        
+        let sundubuJjigae = Recipe(name: "Sundubu Jjigae",
+                              ingredients: ["bok choy",
+                                            "broth",
+                                            "egg",
+                                            "minced garlic",
+                                            "minced pork",
+                                            "mushrooms",
+                                            "red chili flakes",
+                                            "shrimp",
+                                            "spring onion",
+                                            "soft tofu",
+                                            "soy sauce",
+                                            "vegetable & seasame oil",
+                                            "white onion"],
+                              
+                                // Use earthen pot
+                                recipeSteps: [
+                                             recipeStep(title: "Make the paste.", imageTitle: ""),
+                                             recipeStep(title: "Add cooking oil to the pan.", imageTitle: "oil-pan"),
+                                             recipeStep(title: "Add seasame oil to the pan.", imageTitle: "oil-pan"),
+                                             recipeStep(title: "Stir fry green onion."),
+                                             recipeStep(title: "Add ground pork to the pan.", imageTitle: "mince-pork"),
+                                             recipeStep(title: "Add chopped white onions to the pan.", imageTitle: "chopping-white-onion"),
+                                             recipeStep(title: "Add minced garlic to the pan."),
+                                             recipeStep(title: "Add salt to the pan."),
+                                             recipeStep(title: "Add red chili powder the pan."),
+                                             recipeStep(title: "Add sugar to the pan.", imageTitle: "add-sugar"),
+                                             recipeStep(title: "Add soy sauce to the pan."),
+                                                                                                                
+                                             recipeStep(title: "Add broth or water into earthen."),
+                                             recipeStep(title: "Add paste into earthen."),
+                                             recipeStep(title: "Add soft tofu into earthen."),
+                                             recipeStep(title: "Crack egg into earthen pot."),
+                                             recipeStep(title: "Add pepper into earthen pot."),
+                                             recipeStep(title: "Sprinkle cheongyang pepper into earthen pot."),
+                                             recipeStep(title: "Sprinkle chopped scallion into earthen pot.")
+                                            ])
+        
+        let brocolliCheddarSoup = Recipe(name: "Brocolli Cheddar Soup",
+                                         ingredients: ["Broccoli florets", "Chicken Stock", "Heavy creamy"],
+                                         recipeSteps: [])
+        
+        let banhXeo = Recipe(name: "Banh Xeo",
+                             ingredients: ["Shrimp", "Cocunut cream", "Green onion", "Pork belly", "Onion", "bean sprouts", "Dry mung beans", "Mustard greens", "Mint", "Cilantro", "Vietnamese perilla"],
+                             recipeSteps: [])
+        
+        let ramen = Recipe(name: "Ramen",
+                          ingredients: [],
+                          recipeSteps: [])
+        
+        self.recipes = [sundubuJjigae, chickenTikkaMasala, steakAndPotatoesRecipe, bakedSalmonRecipe, elotaRecipe, brocolliCheddarSoup, banhXeo, ramen]
+        
     }
 }

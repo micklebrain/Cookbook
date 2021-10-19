@@ -17,7 +17,10 @@ class ViewRouter: ObservableObject {
     
     init() {
         let allRecipeNames = cookBook.recipes.map { recipe in recipe.name}.joined(separator: "\n")
-        self.currentPage = RecipePageView(title: "All Recipes", contentBody: allRecipeNames, recipe: Recipe(name: "Test", ingredients: [], steps: [""]))
+        self.currentPage = RecipePageView(title: "All Recipes",
+                                          contentBody: allRecipeNames,
+                                          recipe: Recipe(name: "Test",                                                                        ingredients: [],
+                                                         recipeSteps: []))
     }
     
     func nextRecipe() -> RecipePageView {

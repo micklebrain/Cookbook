@@ -14,17 +14,27 @@ struct RecipePageView: View {
     var recipe: Recipe
         
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var ingredientImageData: Data? = nil
   
     var body: some View {
         ScrollView {
             VStack {
                 Text(title).padding()
-                Text(recipe.ingredients.joined(separator: ", ")).foregroundColor(.yellow).padding()
-                Text(recipe.steps.joined(separator: "\n")).padding()
-                if #available(iOS 15.0, *) {
-                    AsyncImage(url: URL(string:"https://www.simplyrecipes.com/thmb/FS_5UNnjGeIU8KyKo2w232Iv0Ek=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2014__12__how-to-chop-onion-800-dm-b6fb9167cb87443fb1d3abdef84059ff.jpg")).frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
-                } else {
-            
+                Text(recipe.ingredients.joined(separator: ", ")).foregroundColor(.red).padding()
+                ForEach((0...recipe.recipeSteps.count), id: \.self) {
+                    if $0 != recipe.recipeSteps.count {
+                        Text(recipe.recipeSteps[$0].title)
+                        if (recipe.recipeSteps[$0].imageTitle != ""){
+                            GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
+                        }
+//                        if let data = ingredientImageData {
+//                            GIFImage(data: data)
+//                                .frame(width: 300)
+//                        } else {
+//                            Text("Loading...")
+//                                .onAppear(perform: loadData)
+//                        }
+                    }
                 }
                 Button(action: {
                     withAnimation {
@@ -35,7 +45,16 @@ struct RecipePageView: View {
                 }
             }
         }
-    } 
+    }
+    
+    private func loadData() {
+        let task = URLSession.shared.dataTask(with: URL(string: "https://github.com/globulus/swiftui-webview/raw/main/Images/preview_macos.gif?raw=true")!) { data, response, error in
+            ingredientImageData = data
+        }
+        task.resume()
+      }
+    
+    
 }
 
 struct SecondPage: View {

@@ -6,22 +6,36 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Recipe {
     var name: String
     var ingredients = [""]
     
-    var all_ingredients: Ingredients = Ingredients(produce: [""], sauces: [""], spices: [""])
+    var allIngredients: Ingredients = Ingredients(produce: [""], sauces: [""], spices: [""])
     
     var preparation_steps = [""]
     
     var steps = [""]
+    var recipeSteps: [recipeStep]
     var spices = [""]
     
-    init(name: String, ingredients: [String], steps: [String]) {
+    init(name: String, ingredients: [String], recipeSteps: [recipeStep]) {
         self.name = name
         self.ingredients = ingredients
-        self.steps = steps
+        self.recipeSteps = recipeSteps
     }
+}
+
+class recipeStep {
+    
+    var title: String
+    var imageTitle: String
+
+    init(title: String, imageTitle: String = "") {
+        self.title = title
+        self.imageTitle = imageTitle
+    }
+    
 }
 
