@@ -66,9 +66,9 @@ class Cookbook {
                                 // Use earthen pot
                                 recipeSteps: [
                                              recipeStep(title: "Make the paste.", imageTitle: ""),
-                                             recipeStep(title: "Add cooking oil to the pan.", imageTitle: "oil-pan"),
-                                             recipeStep(title: "Add seasame oil to the pan.", imageTitle: "oil-pan"),
-                                             recipeStep(title: "Stir fry green onion."),
+                                             recipeStep(title: "Add cooking oil to the pan.", imageTitle: "cooking-oil"),
+                                             recipeStep(title: "Add seasame oil to the pan.", imageTitle: "seasame-oil"),
+                                             recipeStep(title: "Stir fry green onion.", imageTitle: "scallions"),
                                              recipeStep(title: "Add ground pork to the pan.", imageTitle: "mince-pork"),
                                              recipeStep(title: "Add chopped white onions to the pan.", imageTitle: "chopping-white-onion"),
                                              recipeStep(title: "Add minced garlic to the pan."),
@@ -77,9 +77,9 @@ class Cookbook {
                                              recipeStep(title: "Add sugar to the pan.", imageTitle: "add-sugar"),
                                              recipeStep(title: "Add soy sauce to the pan."),
                                                                                                                 
-                                             recipeStep(title: "Add broth or water into earthen."),
-                                             recipeStep(title: "Add paste into earthen."),
-                                             recipeStep(title: "Add soft tofu into earthen."),
+                                             recipeStep(title: "Add broth or water into earthen pot."),
+                                             recipeStep(title: "Add paste into earthen pot."),
+                                             recipeStep(title: "Add soft tofu into earthen pot."),
                                              recipeStep(title: "Crack egg into earthen pot."),
                                              recipeStep(title: "Add pepper into earthen pot."),
                                              recipeStep(title: "Sprinkle cheongyang pepper into earthen pot."),

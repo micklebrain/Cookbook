@@ -22,6 +22,10 @@
 		2A8CD679271F52CC0082BC93 /* add-sugar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD678271F52CC0082BC93 /* add-sugar.gif */; };
 		2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD67A271F52DA0082BC93 /* oil-pan.gif */; };
 		2A8CD67D271F52F60082BC93 /* chopping-white-onion.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD67C271F52F60082BC93 /* chopping-white-onion.gif */; };
+		2A8CD67F271FD4E20082BC93 /* green-onion.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD67E271FD4E20082BC93 /* green-onion.gif */; };
+		2A8CD681271FD7970082BC93 /* cooking-oil.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD680271FD7970082BC93 /* cooking-oil.gif */; };
+		2A8CD683271FD8BC0082BC93 /* seasame-oil.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD682271FD8BC0082BC93 /* seasame-oil.gif */; };
+		2A8CD687271FD9FB0082BC93 /* scallions.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD686271FD9FB0082BC93 /* scallions.gif */; };
 		2AB54A5226BC765300119FBF /* Cookbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54A5126BC765300119FBF /* Cookbook.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		2A8CD678271F52CC0082BC93 /* add-sugar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "add-sugar.gif"; sourceTree = "<group>"; };
 		2A8CD67A271F52DA0082BC93 /* oil-pan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "oil-pan.gif"; sourceTree = "<group>"; };
 		2A8CD67C271F52F60082BC93 /* chopping-white-onion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chopping-white-onion.gif"; sourceTree = "<group>"; };
+		2A8CD67E271FD4E20082BC93 /* green-onion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "green-onion.gif"; sourceTree = "<group>"; };
+		2A8CD680271FD7970082BC93 /* cooking-oil.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cooking-oil.gif"; sourceTree = "<group>"; };
+		2A8CD682271FD8BC0082BC93 /* seasame-oil.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "seasame-oil.gif"; sourceTree = "<group>"; };
+		2A8CD686271FD9FB0082BC93 /* scallions.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = scallions.gif; sourceTree = "<group>"; };
 		2AB54A5126BC765300119FBF /* Cookbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookbook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +170,10 @@
 		2A8CD66D271C87580082BC93 /* Giphs */ = {
 			isa = PBXGroup;
 			children = (
+				2A8CD686271FD9FB0082BC93 /* scallions.gif */,
+				2A8CD682271FD8BC0082BC93 /* seasame-oil.gif */,
+				2A8CD680271FD7970082BC93 /* cooking-oil.gif */,
+				2A8CD67E271FD4E20082BC93 /* green-onion.gif */,
 				2A8CD67C271F52F60082BC93 /* chopping-white-onion.gif */,
 				2A8CD678271F52CC0082BC93 /* add-sugar.gif */,
 				2A8CD67A271F52DA0082BC93 /* oil-pan.gif */,
@@ -278,7 +290,11 @@
 				2A26CDF826B9DF6900A1B876 /* Assets.xcassets in Resources */,
 				2A8CD679271F52CC0082BC93 /* add-sugar.gif in Resources */,
 				2A8CD673271CC06E0082BC93 /* mince-pork.gif in Resources */,
+				2A8CD687271FD9FB0082BC93 /* scallions.gif in Resources */,
 				2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */,
+				2A8CD681271FD7970082BC93 /* cooking-oil.gif in Resources */,
+				2A8CD67F271FD4E20082BC93 /* green-onion.gif in Resources */,
+				2A8CD683271FD8BC0082BC93 /* seasame-oil.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
