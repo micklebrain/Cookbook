@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A79E37C2720D78000F36D00 /* ground-pork.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37B2720D78000F36D00 /* ground-pork.gif */; };
+		0A79E37E2720D92B00F36D00 /* white-onions.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37D2720D92B00F36D00 /* white-onions.gif */; };
+		0A79E3802721D13900F36D00 /* minced-garlic.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37F2721D13900F36D00 /* minced-garlic.gif */; };
+		0A79E3822721D2EA00F36D00 /* salt.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E3812721D2EA00F36D00 /* salt.gif */; };
+		0A79E3842721D46300F36D00 /* red-chili-powder.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E3832721D46300F36D00 /* red-chili-powder.gif */; };
+		0A79E3862721D7C100F36D00 /* brown-sugar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E3852721D7C100F36D00 /* brown-sugar.gif */; };
+		0A79E3882721D88300F36D00 /* soy-sauce.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E3872721D88300F36D00 /* soy-sauce.gif */; };
+		0A93FE0827223E10002994E5 /* tableOfContentsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FE0727223E10002994E5 /* tableOfContentsPageView.swift */; };
 		2A0DB2B1270D3C99000F9E88 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DB2B0270D3C99000F9E88 /* Ingredients.swift */; };
 		2A26CDF426B9DF6700A1B876 /* CookbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CDF326B9DF6700A1B876 /* CookbookApp.swift */; };
 		2A26CDF626B9DF6700A1B876 /* RecipePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CDF526B9DF6700A1B876 /* RecipePageView.swift */; };
@@ -47,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A79E37B2720D78000F36D00 /* ground-pork.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ground-pork.gif"; sourceTree = "<group>"; };
+		0A79E37D2720D92B00F36D00 /* white-onions.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "white-onions.gif"; sourceTree = "<group>"; };
+		0A79E37F2721D13900F36D00 /* minced-garlic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "minced-garlic.gif"; sourceTree = "<group>"; };
+		0A79E3812721D2EA00F36D00 /* salt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = salt.gif; sourceTree = "<group>"; };
+		0A79E3832721D46300F36D00 /* red-chili-powder.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "red-chili-powder.gif"; sourceTree = "<group>"; };
+		0A79E3852721D7C100F36D00 /* brown-sugar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "brown-sugar.gif"; sourceTree = "<group>"; };
+		0A79E3872721D88300F36D00 /* soy-sauce.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "soy-sauce.gif"; sourceTree = "<group>"; };
+		0A93FE0727223E10002994E5 /* tableOfContentsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableOfContentsPageView.swift; sourceTree = "<group>"; };
 		2A0DB2B0270D3C99000F9E88 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		2A26CDF026B9DF6700A1B876 /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A26CDF326B9DF6700A1B876 /* CookbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookApp.swift; sourceTree = "<group>"; };
@@ -137,6 +153,7 @@
 				2A64FDF626D8983E008E4806 /* ViewRouter.swift */,
 				2A0DB2B0270D3C99000F9E88 /* Ingredients.swift */,
 				2A8CD66B271C864A0082BC93 /* GIFImage.swift */,
+				0A93FE0727223E10002994E5 /* tableOfContentsPageView.swift */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
@@ -170,7 +187,14 @@
 		2A8CD66D271C87580082BC93 /* Giphs */ = {
 			isa = PBXGroup;
 			children = (
+				0A79E3852721D7C100F36D00 /* brown-sugar.gif */,
+				0A79E3832721D46300F36D00 /* red-chili-powder.gif */,
+				0A79E3812721D2EA00F36D00 /* salt.gif */,
+				0A79E37F2721D13900F36D00 /* minced-garlic.gif */,
+				0A79E37D2720D92B00F36D00 /* white-onions.gif */,
+				0A79E37B2720D78000F36D00 /* ground-pork.gif */,
 				2A8CD686271FD9FB0082BC93 /* scallions.gif */,
+				0A79E3872721D88300F36D00 /* soy-sauce.gif */,
 				2A8CD682271FD8BC0082BC93 /* seasame-oil.gif */,
 				2A8CD680271FD7970082BC93 /* cooking-oil.gif */,
 				2A8CD67E271FD4E20082BC93 /* green-onion.gif */,
@@ -285,14 +309,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A79E37E2720D92B00F36D00 /* white-onions.gif in Resources */,
 				2A26CDFB26B9DF6900A1B876 /* Preview Assets.xcassets in Resources */,
+				0A79E3802721D13900F36D00 /* minced-garlic.gif in Resources */,
 				2A8CD67D271F52F60082BC93 /* chopping-white-onion.gif in Resources */,
+				0A79E3842721D46300F36D00 /* red-chili-powder.gif in Resources */,
 				2A26CDF826B9DF6900A1B876 /* Assets.xcassets in Resources */,
+				0A79E3882721D88300F36D00 /* soy-sauce.gif in Resources */,
 				2A8CD679271F52CC0082BC93 /* add-sugar.gif in Resources */,
 				2A8CD673271CC06E0082BC93 /* mince-pork.gif in Resources */,
 				2A8CD687271FD9FB0082BC93 /* scallions.gif in Resources */,
 				2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */,
+				0A79E3862721D7C100F36D00 /* brown-sugar.gif in Resources */,
 				2A8CD681271FD7970082BC93 /* cooking-oil.gif in Resources */,
+				0A79E3822721D2EA00F36D00 /* salt.gif in Resources */,
+				0A79E37C2720D78000F36D00 /* ground-pork.gif in Resources */,
 				2A8CD67F271FD4E20082BC93 /* green-onion.gif in Resources */,
 				2A8CD683271FD8BC0082BC93 /* seasame-oil.gif in Resources */,
 			);
@@ -323,6 +354,7 @@
 				2A26CDF626B9DF6700A1B876 /* RecipePageView.swift in Sources */,
 				2A8CD66C271C864A0082BC93 /* GIFImage.swift in Sources */,
 				2A64FDF526D8979F008E4806 /* MotherView.swift in Sources */,
+				0A93FE0827223E10002994E5 /* tableOfContentsPageView.swift in Sources */,
 				2AB54A5226BC765300119FBF /* Cookbook.swift in Sources */,
 				2A26CDF426B9DF6700A1B876 /* CookbookApp.swift in Sources */,
 				2A55C43726C03FD6005851CD /* Recipe.swift in Sources */,

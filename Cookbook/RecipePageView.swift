@@ -20,7 +20,7 @@ struct RecipePageView: View {
         ScrollView {
             VStack {
                 Text(title).padding()
-                Text(recipe.ingredients.joined(separator: ", ")).foregroundColor(.red).padding()
+                Text(contentBody).foregroundColor(.red).padding()
                 ForEach((0...recipe.recipeSteps.count), id: \.self) {
                     if $0 != recipe.recipeSteps.count {
                         Text(recipe.recipeSteps[$0].title)
