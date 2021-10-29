@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2A929B272BA18F00AFC84E /* cookbookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A929A272BA18E00AFC84E /* cookbookPageView.swift */; };
 		0A79E37C2720D78000F36D00 /* ground-pork.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37B2720D78000F36D00 /* ground-pork.gif */; };
 		0A79E37E2720D92B00F36D00 /* white-onions.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37D2720D92B00F36D00 /* white-onions.gif */; };
 		0A79E3802721D13900F36D00 /* minced-garlic.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E37F2721D13900F36D00 /* minced-garlic.gif */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2A929A272BA18E00AFC84E /* cookbookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookbookPageView.swift; sourceTree = "<group>"; };
 		0A79E37B2720D78000F36D00 /* ground-pork.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ground-pork.gif"; sourceTree = "<group>"; };
 		0A79E37D2720D92B00F36D00 /* white-onions.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "white-onions.gif"; sourceTree = "<group>"; };
 		0A79E37F2721D13900F36D00 /* minced-garlic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "minced-garlic.gif"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				2A0DB2B0270D3C99000F9E88 /* Ingredients.swift */,
 				2A8CD66B271C864A0082BC93 /* GIFImage.swift */,
 				0A93FE0727223E10002994E5 /* tableOfContentsPageView.swift */,
+				0A2A929A272BA18E00AFC84E /* cookbookPageView.swift */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2A929B272BA18F00AFC84E /* cookbookPageView.swift in Sources */,
 				2A0DB2B1270D3C99000F9E88 /* Ingredients.swift in Sources */,
 				2A26CDF626B9DF6700A1B876 /* RecipePageView.swift in Sources */,
 				2A8CD66C271C864A0082BC93 /* GIFImage.swift in Sources */,

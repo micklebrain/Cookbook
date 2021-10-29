@@ -13,12 +13,18 @@ struct tableOfContentsPageView: View {
     var recipes: [String] = []
     var cookbook = Cookbook()
     
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         VStack {
             Label("Table of Contents", systemImage: "bolt.fill")
             ForEach(cookbook.recipes, id: \.name) { recipe in
                 Button(action: {
-                    withAnimation{}
+                    withAnimation{
+                        viewRouter.currentPage = RecipePageView(title: recipe.name,
+                                                                contentBody: recipe.ingredients.joined(separator: ", "),
+                                                                recipe: recipe)
+                    }
                 }, label: {
                     Label(recipe.name, systemImage: "bolt.fill")
                 })                

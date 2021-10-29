@@ -38,7 +38,7 @@ struct RecipePageView: View {
                 }
                 Button(action: {
                     withAnimation {
-                        viewRouter.currentPage = viewRouter.nextRecipe()
+//                        viewRouter.currentPage = viewRouter.nextRecipe()
                     }
                 }) {
                     NextRecipeContent()

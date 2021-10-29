@@ -64,8 +64,7 @@ class Cookbook {
                                             "seasame oil",
                                             "vegetable & seasame oil",
                                             "white onion"],
-                              
-                                // Use earthen pot
+                                                              
                                 recipeSteps: [
                                              recipeStep(title: "Make the paste.", imageTitle: ""),
                                              recipeStep(title: "Add cooking oil to the pan.", imageTitle: "cooking-oil"),
