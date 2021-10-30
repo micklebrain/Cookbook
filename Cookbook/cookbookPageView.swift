@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct cookbookPageView {
+struct cookbookPageView: View {
     
-    
+    var body: some View {
+        VStack {
+            Label("Title", systemImage: "bolt.fill")
+        }
+    }
     
 }
 

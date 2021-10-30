@@ -24,6 +24,7 @@ struct tableOfContentsPageView: View {
                         viewRouter.currentPage = RecipePageView(title: recipe.name,
                                                                 contentBody: recipe.ingredients.joined(separator: ", "),
                                                                 recipe: recipe)
+                        viewRouter.homePage = false
                     }
                 }, label: {
                     Label(recipe.name, systemImage: "bolt.fill")

@@ -16,7 +16,11 @@ struct MotherView: View {
     var currentRecipePage = 0
         
     var body: some View {
-        viewRouter.currentPage
+        if viewRouter.homePage{
+            viewRouter.homePageView
+        } else {
+            viewRouter.currentPage
+        }
     }
     
 }
