@@ -15,10 +15,14 @@ class Cookbook {
         self.addRecipes()
     }
     
+    func addRecipe(recipe: Recipe) {
+        
+        self.recipes.append(recipe)
+        
+    }
+    
     func addRecipes() {
-        
-        let elotaRecipe = Recipe(name: "Elota", ingredients: ["Corn", "Red Chilli flakes"], recipeSteps: [])
-        
+                
         let bakedSalmonRecipe = Recipe(name: "Baked Salmon",
                                        ingredients: ["Salmon", "Salt", "Pepper"],
 //                                       steps: ["1. Add Salt and pepper", "2. Grill Salmon"],
@@ -47,46 +51,7 @@ class Cookbook {
                                                       "1 tsp of cayenne pepper",
                                                       "1 Tbsp. of grated ginger"],
                                         recipeSteps: [])
-        
-        let sundubuJjigae = Recipe(name: "Sundubu Jjigae",
-                              ingredients: ["bok choy",
-                                            "broth",
-                                            "egg",
-                                            "green onion",
-                                            "minced garlic",
-                                            "ground pork",
-                                            "mushrooms",
-                                            "red chili flakes",
-                                            "shrimp",
-                                            "spring onion",
-                                            "soft tofu",
-                                            "soy sauce",
-                                            "seasame oil",
-                                            "vegetable & seasame oil",
-                                            "white onion"],
-                                                              
-                                recipeSteps: [
-                                             recipeStep(title: "Make the paste.", imageTitle: ""),
-                                             recipeStep(title: "Add cooking oil to the pan.", imageTitle: "cooking-oil"),
-                                             recipeStep(title: "Add seasame oil to the pan.", imageTitle: "seasame-oil"),
-                                             recipeStep(title: "Stir fry green onion.", imageTitle: "scallions"),
-                                             recipeStep(title: "Add ground pork to the pan.", imageTitle: "ground-pork"),
-                                             recipeStep(title: "Add chopped white onions to the pan.", imageTitle: "white-onions"),
-                                             recipeStep(title: "Add minced garlic to the pan.", imageTitle: "minced-garlic"),
-                                             recipeStep(title: "Add salt to the pan.", imageTitle: "salt"),
-                                             recipeStep(title: "Add red chili powder the pan.", imageTitle: "red-chili-powder"),
-                                             recipeStep(title: "Add sugar to the pan.", imageTitle: "brown-sugar"),
-                                             recipeStep(title: "Add soy sauce to the pan.", imageTitle: "soy-sauce"),
-                                                                                                                
-                                             recipeStep(title: "Add broth or water into earthen pot."),
-                                             recipeStep(title: "Add paste into earthen pot."),
-                                             recipeStep(title: "Add soft tofu into earthen pot."),
-                                             recipeStep(title: "Crack egg into earthen pot."),
-                                             recipeStep(title: "Add pepper into earthen pot."),
-                                             recipeStep(title: "Sprinkle cheongyang pepper into earthen pot."),
-                                             recipeStep(title: "Sprinkle chopped scallion into earthen pot.")
-                                            ])
-        
+                
         let brocolliCheddarSoup = Recipe(name: "Brocolli Cheddar Soup",
                                          ingredients: ["Broccoli florets", "Chicken Stock", "Heavy creamy"],
                                          recipeSteps: [])
@@ -99,7 +64,7 @@ class Cookbook {
                           ingredients: [],
                           recipeSteps: [])
         
-        self.recipes = [sundubuJjigae, chickenTikkaMasala, steakAndPotatoesRecipe, bakedSalmonRecipe, elotaRecipe, brocolliCheddarSoup, banhXeo, ramen]
+        self.recipes = [chickenTikkaMasala, steakAndPotatoesRecipe, bakedSalmonRecipe, brocolliCheddarSoup, banhXeo, ramen]
         
     }
 }

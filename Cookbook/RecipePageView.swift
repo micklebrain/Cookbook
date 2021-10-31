@@ -11,7 +11,7 @@ struct RecipePageView: View {
         
     var title: String
     var contentBody: String
-    var recipe: Recipe
+    var recipe: Recipe    
         
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var ingredientImageData: Data? = nil
@@ -38,7 +38,12 @@ struct RecipePageView: View {
                 }
                 Button(action: {
                     withAnimation {
-                        viewRouter.currentPage = viewRouter.nextRecipe()
+                        let nextRecipePage = viewRouter.nextRecipe()
+                        if viewRouter.currentRecipePage == 0 {
+                            viewRouter.homePage = true
+                        } else {
+                            viewRouter.currentPage = nextRecipePage
+                        }
                     }
                 }) {
                     NextRecipeContent()
