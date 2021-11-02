@@ -67,6 +67,7 @@ class ViewRouter: ObservableObject {
         
         let allRecipeNames = cookBook.recipes.map { recipe in recipe.name }.joined(separator: "\n")
         
+        
         self.currentPage = RecipePageView(title: "All Recipes",
                                           contentBody: allRecipeNames,
                                           recipe: Recipe(name: "Test",                                                                            ingredients: [],
@@ -82,9 +83,12 @@ class ViewRouter: ObservableObject {
 //
 //            }
 //        }
-//
+        
+        var contentBody = cookBook.recipes[currentRecipePage].ingredients.joined(separator: ", ")
+        contentBody += cookBook.recipes[currentRecipePage].spices.joined(separator: ", ")
+
         let recipePV = RecipePageView(title: cookBook.recipes[currentRecipePage].name,
-                                      contentBody: cookBook.recipes[currentRecipePage].ingredients.joined(separator: ", "),
+                                      contentBody: contentBody,
                                       recipe: cookBook.recipes[currentRecipePage])
         
         homePage = false
@@ -100,8 +104,11 @@ class ViewRouter: ObservableObject {
             currentRecipePage += 1
         }
         
+        var contentBody = cookBook.recipes[currentRecipePage].ingredients.joined(separator: ", ")
+        contentBody += cookBook.recipes[currentRecipePage].spices.joined(separator: ", ")
+        
         let recipePV = RecipePageView(title: cookBook.recipes[currentRecipePage].name,
-                                      contentBody: cookBook.recipes[currentRecipePage].ingredients.joined(separator: ", "),
+                                      contentBody: contentBody,
                                       recipe: cookBook.recipes[currentRecipePage])
         
         homePage = false

@@ -11,7 +11,7 @@ struct RecipePageView: View {
         
     var title: String
     var contentBody: String
-    var recipe: Recipe    
+    var recipe: Recipe
         
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var ingredientImageData: Data? = nil
@@ -20,7 +20,7 @@ struct RecipePageView: View {
         ScrollView {
             VStack {
                 Text(title).padding()
-                Text(contentBody).foregroundColor(.red).padding()
+                Text(contentBody).foregroundColor(.red).padding()             
                 ForEach((0...recipe.recipeSteps.count), id: \.self) {
                     if $0 != recipe.recipeSteps.count {
                         Text(recipe.recipeSteps[$0].title)
@@ -35,6 +35,13 @@ struct RecipePageView: View {
 //                                .onAppear(perform: loadData)
 //                        }
                     }
+                }
+                Button(action: {
+                    withAnimation {
+                        viewRouter.homePage = true
+                    }
+                }) {
+                    HomeButtonContent()
                 }
                 Button(action: {
                     withAnimation {
@@ -69,11 +76,17 @@ struct SecondPage: View {
     }
 }
 
-//struct RecipePageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct HomeButtonContent : View {
+    var body: some View {
+        Text("TABLE OF CONTENTS")
+            .foregroundColor(.white)
+            .frame(width: 200, height: 50)
+            .background(Color.blue)
+            .cornerRadius(15)
+            .padding(.top, 50)
+    }
+}
+
 
 struct NextRecipeContent : View {
     var body: some View {
@@ -85,3 +98,10 @@ struct NextRecipeContent : View {
             .padding(.top, 50)
     }
 }
+
+//struct RecipePageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+

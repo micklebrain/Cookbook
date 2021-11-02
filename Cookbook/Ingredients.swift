@@ -7,13 +7,15 @@
 
 import Foundation
 
-class Ingredients {
+class Ingredient {
     
     var fruits = [""]
     var produce = [""]
     var sauces = [""]
     var spices = [""]
     var vegatables = [""]
+    
+    var type: String = ""
     
     init(produce: [String], sauces: [String], spices: [String]) {
         self.produce = produce

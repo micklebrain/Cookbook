@@ -11,17 +11,18 @@ import SwiftUI
 class Recipe {
     var name: String
     var ingredients = [""]
-    var allIngredients: Ingredients = Ingredients(produce: [""], sauces: [""], spices: [""])
+    var allIngredients: Ingredient = Ingredient(produce: [""], sauces: [""], spices: [""])    
     var preparation_steps = [""]
     var steps = [""]
     var recipeSteps: [recipeStep]
-    var spices = [""]
+    var spices: [String]
     var cuisine = ""
     
-    init(name: String, ingredients: [String], recipeSteps: [recipeStep]) {
+    init(name: String, ingredients: [String], recipeSteps: [recipeStep], spices: [String] = [""]) {
         self.name = name
         self.ingredients = ingredients
         self.recipeSteps = recipeSteps
+        self.spices = spices
     }
 }
 
