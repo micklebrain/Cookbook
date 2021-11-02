@@ -10,7 +10,6 @@ import SwiftUI
 struct RecipePageView: View {
         
     var title: String
-    var contentBody: String
     var recipe: Recipe
         
     @EnvironmentObject var viewRouter: ViewRouter
@@ -19,8 +18,21 @@ struct RecipePageView: View {
     var body: some View {
         ScrollView {
             VStack {
+                Button(action: {
+                    withAnimation {
+                        viewRouter.homePage = true
+                    }
+                }) {
+                    HomeButtonContent()
+                }
                 Text(title).padding()
-                Text(contentBody).foregroundColor(.red).padding()             
+                Text("Produce").padding()
+                Text(recipe.ingredients.joined(separator: ", ")).padding()
+                Text("Spices").padding()
+                Text(recipe.spices.joined(separator: ", ")).padding()
+                Text("Vegetables")
+                Text(recipe.vegetables.joined(separator: ", ")).padding()
+                
                 ForEach((0...recipe.recipeSteps.count), id: \.self) {
                     if $0 != recipe.recipeSteps.count {
                         Text(recipe.recipeSteps[$0].title)
@@ -38,13 +50,6 @@ struct RecipePageView: View {
                 }
                 Button(action: {
                     withAnimation {
-                        viewRouter.homePage = true
-                    }
-                }) {
-                    HomeButtonContent()
-                }
-                Button(action: {
-                    withAnimation {
                         let nextRecipePage = viewRouter.nextRecipe()
                         if viewRouter.currentRecipePage == 0 {
                             viewRouter.homePage = true
@@ -59,13 +64,12 @@ struct RecipePageView: View {
         }
     }
     
-    private func loadData() {
-        let task = URLSession.shared.dataTask(with: URL(string: "https://github.com/globulus/swiftui-webview/raw/main/Images/preview_macos.gif?raw=true")!) { data, response, error in
-            ingredientImageData = data
-        }
-        task.resume()
-      }
-    
+//    private func loadData() {
+//        let task = URLSession.shared.dataTask(with: URL(string: "https://github.com/globulus/swiftui-webview/raw/main/Images/preview_macos.gif?raw=true")!) { data, response, error in
+//            ingredientImageData = data
+//        }
+//        task.resume()
+//      }
     
 }
 

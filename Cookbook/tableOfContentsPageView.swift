@@ -23,13 +23,8 @@ struct tableOfContentsPageView: View {
                 Button(action: {
                     withAnimation{
                         viewRouter.currentRecipePage = count
-                        
-                        var contentBody = recipe.ingredients.joined(separator: ", ")
-                        contentBody += "\nSpices \n"
-                        contentBody += recipe.spices.joined(separator: ", ")
-                        
-                        viewRouter.currentPage = RecipePageView(title: recipe.name,
-                                                                contentBody: contentBody,
+                                                                        
+                        viewRouter.currentPage = RecipePageView(title: recipe.name,                                                                
                                                                 recipe: recipe)
                         count += 1
                         viewRouter.homePage = false
