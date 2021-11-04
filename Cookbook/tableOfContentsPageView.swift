@@ -11,14 +11,14 @@ import SwiftUI
 struct tableOfContentsPageView: View {
  
     var recipes: [String] = []
-    var cookbook = Cookbook()
     
+    @EnvironmentObject var cookbook: Cookbook
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
-            Label("Table of Contents", systemImage: "bolt.fill")
-            var count = 0
+            Label("Table of Contents", systemImage: "")
+            var count = 0            
             ForEach(cookbook.recipes, id: \.name) { recipe in
                 Button(action: {
                     withAnimation{

@@ -14,6 +14,7 @@ struct RecipePageView: View {
         
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var ingredientImageData: Data? = nil
+    @State private var vibrateOnRing = false
   
     var body: some View {
         ScrollView {
@@ -26,17 +27,17 @@ struct RecipePageView: View {
                     HomeButtonContent()
                 }
                 Text(title).padding()
-                Text("Produce").padding()
+                Text("Produce 🥩").padding()
                 Text(recipe.ingredients.joined(separator: ", ")).padding()
-                Text("Spices").padding()
+                Text("Spices 🌶").padding()
                 Text(recipe.spices.joined(separator: ", ")).padding()
-                Text("Vegetables")
+                Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
                 
                 ForEach((0...recipe.recipeSteps.count), id: \.self) {
                     if $0 != recipe.recipeSteps.count {
                         Text(recipe.recipeSteps[$0].title)
-                        if (recipe.recipeSteps[$0].imageTitle != ""){
+                        if (recipe.recipeSteps[$0].imageTitle != "") {
                             GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
                         }
 //                        if let data = ingredientImageData {
@@ -48,18 +49,18 @@ struct RecipePageView: View {
 //                        }
                     }
                 }
-                Button(action: {
-                    withAnimation {
-                        let nextRecipePage = viewRouter.nextRecipe()
-                        if viewRouter.currentRecipePage == 0 {
-                            viewRouter.homePage = true
-                        } else {
-                            viewRouter.currentPage = nextRecipePage
-                        }
-                    }
-                }) {
-                    NextRecipeContent()
-                }
+//                Button(action: {
+//                    withAnimation {
+//                        let nextRecipePage = viewRouter.nextRecipe()
+//                        if viewRouter.currentRecipePage == 0 {
+//                            viewRouter.homePage = true
+//                        } else {
+//                            viewRouter.currentPage = nextRecipePage
+//                        }
+//                    }
+//                }) {
+//                    NextRecipeContent()
+//                }
             }
         }
     }

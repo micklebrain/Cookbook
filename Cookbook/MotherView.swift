@@ -12,6 +12,7 @@ import SwiftUI
 struct MotherView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var cookbook: Cookbook
     
     var currentRecipePage = 0
         

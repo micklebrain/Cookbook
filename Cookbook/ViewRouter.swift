@@ -13,7 +13,8 @@ class ViewRouter: ObservableObject {
     @Published var homePage : Bool = true
     @Published var currentPage: RecipePageView
     
-    var cookBook = Cookbook()
+    @EnvironmentObject var cookBook: Cookbook
+    
     var currentRecipePage = 0
     var homePageView: tableOfContentsPageView
     
