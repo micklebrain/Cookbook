@@ -13,33 +13,33 @@ class ViewRouter: ObservableObject {
     @Published var homePage : Bool = true
     @Published var currentPage: RecipePageView
     
-    @EnvironmentObject var cookBook: Cookbook
+//    @EnvironmentObject var cookBook: Cookbook
     
     var currentRecipePage = 0
-    var homePageView: tableOfContentsPageView
+    var homePageView: TableOfContentsPageView
     
     init() {
         self.currentPage = RecipePageView(title: "All Recipes",
                                           recipe: Recipe(name: "Test",
                                                          ingredients: [],
                                                          recipeSteps: []))
-        self.homePageView = tableOfContentsPageView()
+        self.homePageView = TableOfContentsPageView()
             
     }
         
-    func nextRecipe() -> RecipePageView {
-        if (currentRecipePage >= cookBook.recipes.count-1) {
-            homePage = true
-            currentRecipePage = 0            
-        } else {
-            currentRecipePage += 1
-        }
-          
-        let recipePV = RecipePageView(title: cookBook.recipes[currentRecipePage].name,
-                                      recipe: cookBook.recipes[currentRecipePage])
-        
-        homePage = false
-        return recipePV
-    }
+//    func nextRecipe() -> RecipePageView {
+//        if (currentRecipePage >= cookBook.recipes.count-1) {
+//            homePage = true
+//            currentRecipePage = 0            
+//        } else {
+//            currentRecipePage += 1
+//        }
+//          
+//        let recipePV = RecipePageView(title: cookBook.recipes[currentRecipePage].name,
+//                                      recipe: cookBook.recipes[currentRecipePage])
+//        
+//        homePage = false
+//        return recipePV
+//    }
     
 }

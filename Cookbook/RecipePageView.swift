@@ -36,8 +36,9 @@ struct RecipePageView: View {
                 
                 ForEach((0...recipe.recipeSteps.count), id: \.self) {
                     if $0 != recipe.recipeSteps.count {
-                        Text(recipe.recipeSteps[$0].title)
+                        Text("\($0+1). \(recipe.recipeSteps[$0].title)")
                         if (recipe.recipeSteps[$0].imageTitle != "") {
+//                            let height = UIScreen.main.bounds.height * 0.9
                             GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
                         }
 //                        if let data = ingredientImageData {
@@ -49,6 +50,7 @@ struct RecipePageView: View {
 //                        }
                     }
                 }
+                
 //                Button(action: {
 //                    withAnimation {
 //                        let nextRecipePage = viewRouter.nextRecipe()

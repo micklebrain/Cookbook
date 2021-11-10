@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct tableOfContentsPageView: View {
+struct TableOfContentsPageView: View {
  
     var recipes: [String] = []
     
@@ -17,7 +17,7 @@ struct tableOfContentsPageView: View {
     
     var body: some View {
         VStack {
-            Label("Table of Contents", systemImage: "")
+            Label("Table of Contents", systemImage: "bolt.fill").labelStyle(.titleOnly)
             var count = 0            
             ForEach(cookbook.recipes, id: \.name) { recipe in
                 Button(action: {
@@ -31,7 +31,7 @@ struct tableOfContentsPageView: View {
                     }
                 }, label: {
                     Label(recipe.name, systemImage: "bolt.fill")
-                })                
+                }).padding()
             }
         }
     }
