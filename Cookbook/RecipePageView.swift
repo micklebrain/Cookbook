@@ -29,7 +29,7 @@ struct RecipePageView: View {
                 Text(title).padding()
                 Text("Produce 🥩").padding()
                 Text(recipe.ingredients.joined(separator: ", ")).padding()
-                Text("Spices 🌶").padding()
+                Text("Spices 🌶 and Herbs ").padding()
                 Text(recipe.spices.joined(separator: ", ")).padding()
                 Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()

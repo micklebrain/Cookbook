@@ -69,6 +69,64 @@
 		2A8CD683271FD8BC0082BC93 /* sundubu-step-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD682271FD8BC0082BC93 /* sundubu-step-2.gif */; };
 		2A8CD687271FD9FB0082BC93 /* sundubu-step-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CD686271FD9FB0082BC93 /* sundubu-step-3.gif */; };
 		2AB54A5226BC765300119FBF /* Cookbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54A5126BC765300119FBF /* Cookbook.swift */; };
+		2ABED38F274197DA00334F6F /* chicken-potatoes-21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED374274197D700334F6F /* chicken-potatoes-21.gif */; };
+		2ABED390274197DA00334F6F /* chicken-potatoes-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED375274197D700334F6F /* chicken-potatoes-6.gif */; };
+		2ABED391274197DA00334F6F /* chicken-potatoes-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED376274197D700334F6F /* chicken-potatoes-10.gif */; };
+		2ABED392274197DA00334F6F /* chicken-potatoes-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED377274197D700334F6F /* chicken-potatoes-17.gif */; };
+		2ABED393274197DA00334F6F /* chicken-potatoes-22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED378274197D700334F6F /* chicken-potatoes-22.gif */; };
+		2ABED394274197DA00334F6F /* chicken-potatoes-19.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED379274197D700334F6F /* chicken-potatoes-19.gif */; };
+		2ABED395274197DA00334F6F /* chicken-potatoes-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37A274197D700334F6F /* chicken-potatoes-3.gif */; };
+		2ABED396274197DA00334F6F /* chicken-potatoes-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37B274197D800334F6F /* chicken-potatoes-1.gif */; };
+		2ABED397274197DA00334F6F /* chicken-potatoes-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37C274197D800334F6F /* chicken-potatoes-14.gif */; };
+		2ABED398274197DA00334F6F /* chicken-potatoes-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37D274197D800334F6F /* chicken-potatoes-7.gif */; };
+		2ABED399274197DA00334F6F /* chicken-potatoes-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37E274197D800334F6F /* chicken-potatoes-9.gif */; };
+		2ABED39A274197DA00334F6F /* chicken-potatoes-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED37F274197D800334F6F /* chicken-potatoes-4.gif */; };
+		2ABED39B274197DA00334F6F /* chicken-potatoes-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED380274197D900334F6F /* chicken-potatoes-8.gif */; };
+		2ABED39C274197DA00334F6F /* chicken-potatoes-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED381274197D900334F6F /* chicken-potatoes-11.gif */; };
+		2ABED39D274197DA00334F6F /* chicken-potatoes-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED382274197D900334F6F /* chicken-potatoes-5.gif */; };
+		2ABED39E274197DA00334F6F /* chicken-potatoes-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED383274197D900334F6F /* chicken-potatoes-16.gif */; };
+		2ABED39F274197DA00334F6F /* chicken-potatoes-18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED384274197D900334F6F /* chicken-potatoes-18.gif */; };
+		2ABED3A0274197DA00334F6F /* chicken-potatoes-25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED385274197D900334F6F /* chicken-potatoes-25.gif */; };
+		2ABED3A1274197DA00334F6F /* chicken-potatoes-26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED386274197D900334F6F /* chicken-potatoes-26.gif */; };
+		2ABED3A2274197DA00334F6F /* chicken-potatoes-27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED387274197D900334F6F /* chicken-potatoes-27.gif */; };
+		2ABED3A3274197DA00334F6F /* chicken-potatoes-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED388274197D900334F6F /* chicken-potatoes-15.gif */; };
+		2ABED3A4274197DA00334F6F /* chicken-potatoes-23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED389274197DA00334F6F /* chicken-potatoes-23.gif */; };
+		2ABED3A5274197DA00334F6F /* chicken-potatoes-20.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED38A274197DA00334F6F /* chicken-potatoes-20.gif */; };
+		2ABED3A6274197DA00334F6F /* chicken-potatoes-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED38B274197DA00334F6F /* chicken-potatoes-13.gif */; };
+		2ABED3A7274197DA00334F6F /* chicken-potatoes-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED38C274197DA00334F6F /* chicken-potatoes-12.gif */; };
+		2ABED3A8274197DA00334F6F /* chicken-potatoes-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED38D274197DA00334F6F /* chicken-potatoes-2.gif */; };
+		2ABED3A9274197DA00334F6F /* chicken-potatoes-24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED38E274197DA00334F6F /* chicken-potatoes-24.gif */; };
+		2ABED3B82743700500334F6F /* Ram-don-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3AB2743700300334F6F /* Ram-don-7.gif */; };
+		2ABED3B92743700500334F6F /* Ram-don-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3AC2743700300334F6F /* Ram-don-13.gif */; };
+		2ABED3BA2743700500334F6F /* Ram-don-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3AD2743700300334F6F /* Ram-don-3.gif */; };
+		2ABED3BB2743700500334F6F /* Ram-don-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3AE2743700300334F6F /* Ram-don-10.gif */; };
+		2ABED3BC2743700500334F6F /* Ram-don-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3AF2743700400334F6F /* Ram-don-4.gif */; };
+		2ABED3BD2743700500334F6F /* Ram-don-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B02743700400334F6F /* Ram-don-11.gif */; };
+		2ABED3BE2743700500334F6F /* Ram-don-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B12743700400334F6F /* Ram-don-9.gif */; };
+		2ABED3BF2743700500334F6F /* Ram-don-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B22743700400334F6F /* Ram-don-1.gif */; };
+		2ABED3C02743700500334F6F /* Ram-don-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B32743700400334F6F /* Ram-don-12.gif */; };
+		2ABED3C12743700500334F6F /* Ram-don-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B42743700400334F6F /* Ram-don-6.gif */; };
+		2ABED3C22743700500334F6F /* Ram-don-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B52743700400334F6F /* Ram-don-5.gif */; };
+		2ABED3C32743700500334F6F /* Ram-don-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B62743700400334F6F /* Ram-don-2.gif */; };
+		2ABED3C42743700500334F6F /* Ram-don-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B72743700500334F6F /* Ram-don-8.gif */; };
+		2ABED3D72743799D00334F6F /* elota-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C62743799B00334F6F /* elota-11.gif */; };
+		2ABED3D82743799D00334F6F /* elota-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C72743799B00334F6F /* elota-3.gif */; };
+		2ABED3D92743799D00334F6F /* elota-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C82743799B00334F6F /* elota-4.gif */; };
+		2ABED3DA2743799D00334F6F /* elota-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C92743799B00334F6F /* elota-13.gif */; };
+		2ABED3DB2743799D00334F6F /* elota-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CA2743799C00334F6F /* elota-1.gif */; };
+		2ABED3DC2743799D00334F6F /* elota-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CB2743799C00334F6F /* elota-10.gif */; };
+		2ABED3DD2743799D00334F6F /* elota-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CC2743799C00334F6F /* elota-15.gif */; };
+		2ABED3DE2743799D00334F6F /* elota-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CD2743799C00334F6F /* elota-17.gif */; };
+		2ABED3DF2743799D00334F6F /* elota-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CE2743799C00334F6F /* elota-9.gif */; };
+		2ABED3E02743799D00334F6F /* elota-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CF2743799C00334F6F /* elota-12.gif */; };
+		2ABED3E12743799D00334F6F /* elota-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D02743799D00334F6F /* elota-7.gif */; };
+		2ABED3E22743799D00334F6F /* elota-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D12743799D00334F6F /* elota-8.gif */; };
+		2ABED3E32743799D00334F6F /* elota-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D22743799D00334F6F /* elota-14.gif */; };
+		2ABED3E42743799D00334F6F /* elota-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D32743799D00334F6F /* elota-5.gif */; };
+		2ABED3E52743799D00334F6F /* elota-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D42743799D00334F6F /* elota-6.gif */; };
+		2ABED3E62743799D00334F6F /* elota-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D52743799D00334F6F /* elota-2.gif */; };
+		2ABED3E72743799D00334F6F /* elota-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D62743799D00334F6F /* elota-16.gif */; };
+		2ABED3E927443B8300334F6F /* butter-chicken-step-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +216,64 @@
 		2A8CD682271FD8BC0082BC93 /* sundubu-step-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sundubu-step-2.gif"; sourceTree = "<group>"; };
 		2A8CD686271FD9FB0082BC93 /* sundubu-step-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sundubu-step-3.gif"; sourceTree = "<group>"; };
 		2AB54A5126BC765300119FBF /* Cookbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookbook.swift; sourceTree = "<group>"; };
+		2ABED374274197D700334F6F /* chicken-potatoes-21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-21.gif"; sourceTree = "<group>"; };
+		2ABED375274197D700334F6F /* chicken-potatoes-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-6.gif"; sourceTree = "<group>"; };
+		2ABED376274197D700334F6F /* chicken-potatoes-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-10.gif"; sourceTree = "<group>"; };
+		2ABED377274197D700334F6F /* chicken-potatoes-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-17.gif"; sourceTree = "<group>"; };
+		2ABED378274197D700334F6F /* chicken-potatoes-22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-22.gif"; sourceTree = "<group>"; };
+		2ABED379274197D700334F6F /* chicken-potatoes-19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-19.gif"; sourceTree = "<group>"; };
+		2ABED37A274197D700334F6F /* chicken-potatoes-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-3.gif"; sourceTree = "<group>"; };
+		2ABED37B274197D800334F6F /* chicken-potatoes-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-1.gif"; sourceTree = "<group>"; };
+		2ABED37C274197D800334F6F /* chicken-potatoes-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-14.gif"; sourceTree = "<group>"; };
+		2ABED37D274197D800334F6F /* chicken-potatoes-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-7.gif"; sourceTree = "<group>"; };
+		2ABED37E274197D800334F6F /* chicken-potatoes-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-9.gif"; sourceTree = "<group>"; };
+		2ABED37F274197D800334F6F /* chicken-potatoes-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-4.gif"; sourceTree = "<group>"; };
+		2ABED380274197D900334F6F /* chicken-potatoes-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-8.gif"; sourceTree = "<group>"; };
+		2ABED381274197D900334F6F /* chicken-potatoes-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-11.gif"; sourceTree = "<group>"; };
+		2ABED382274197D900334F6F /* chicken-potatoes-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-5.gif"; sourceTree = "<group>"; };
+		2ABED383274197D900334F6F /* chicken-potatoes-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-16.gif"; sourceTree = "<group>"; };
+		2ABED384274197D900334F6F /* chicken-potatoes-18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-18.gif"; sourceTree = "<group>"; };
+		2ABED385274197D900334F6F /* chicken-potatoes-25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-25.gif"; sourceTree = "<group>"; };
+		2ABED386274197D900334F6F /* chicken-potatoes-26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-26.gif"; sourceTree = "<group>"; };
+		2ABED387274197D900334F6F /* chicken-potatoes-27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-27.gif"; sourceTree = "<group>"; };
+		2ABED388274197D900334F6F /* chicken-potatoes-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-15.gif"; sourceTree = "<group>"; };
+		2ABED389274197DA00334F6F /* chicken-potatoes-23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-23.gif"; sourceTree = "<group>"; };
+		2ABED38A274197DA00334F6F /* chicken-potatoes-20.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-20.gif"; sourceTree = "<group>"; };
+		2ABED38B274197DA00334F6F /* chicken-potatoes-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-13.gif"; sourceTree = "<group>"; };
+		2ABED38C274197DA00334F6F /* chicken-potatoes-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-12.gif"; sourceTree = "<group>"; };
+		2ABED38D274197DA00334F6F /* chicken-potatoes-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-2.gif"; sourceTree = "<group>"; };
+		2ABED38E274197DA00334F6F /* chicken-potatoes-24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-potatoes-24.gif"; sourceTree = "<group>"; };
+		2ABED3AB2743700300334F6F /* Ram-don-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-7.gif"; sourceTree = "<group>"; };
+		2ABED3AC2743700300334F6F /* Ram-don-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-13.gif"; sourceTree = "<group>"; };
+		2ABED3AD2743700300334F6F /* Ram-don-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-3.gif"; sourceTree = "<group>"; };
+		2ABED3AE2743700300334F6F /* Ram-don-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-10.gif"; sourceTree = "<group>"; };
+		2ABED3AF2743700400334F6F /* Ram-don-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-4.gif"; sourceTree = "<group>"; };
+		2ABED3B02743700400334F6F /* Ram-don-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-11.gif"; sourceTree = "<group>"; };
+		2ABED3B12743700400334F6F /* Ram-don-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-9.gif"; sourceTree = "<group>"; };
+		2ABED3B22743700400334F6F /* Ram-don-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-1.gif"; sourceTree = "<group>"; };
+		2ABED3B32743700400334F6F /* Ram-don-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-12.gif"; sourceTree = "<group>"; };
+		2ABED3B42743700400334F6F /* Ram-don-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-6.gif"; sourceTree = "<group>"; };
+		2ABED3B52743700400334F6F /* Ram-don-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-5.gif"; sourceTree = "<group>"; };
+		2ABED3B62743700400334F6F /* Ram-don-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-2.gif"; sourceTree = "<group>"; };
+		2ABED3B72743700500334F6F /* Ram-don-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-8.gif"; sourceTree = "<group>"; };
+		2ABED3C62743799B00334F6F /* elota-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-11.gif"; sourceTree = "<group>"; };
+		2ABED3C72743799B00334F6F /* elota-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-3.gif"; sourceTree = "<group>"; };
+		2ABED3C82743799B00334F6F /* elota-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-4.gif"; sourceTree = "<group>"; };
+		2ABED3C92743799B00334F6F /* elota-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-13.gif"; sourceTree = "<group>"; };
+		2ABED3CA2743799C00334F6F /* elota-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-1.gif"; sourceTree = "<group>"; };
+		2ABED3CB2743799C00334F6F /* elota-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-10.gif"; sourceTree = "<group>"; };
+		2ABED3CC2743799C00334F6F /* elota-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-15.gif"; sourceTree = "<group>"; };
+		2ABED3CD2743799C00334F6F /* elota-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-17.gif"; sourceTree = "<group>"; };
+		2ABED3CE2743799C00334F6F /* elota-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-9.gif"; sourceTree = "<group>"; };
+		2ABED3CF2743799C00334F6F /* elota-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-12.gif"; sourceTree = "<group>"; };
+		2ABED3D02743799D00334F6F /* elota-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-7.gif"; sourceTree = "<group>"; };
+		2ABED3D12743799D00334F6F /* elota-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-8.gif"; sourceTree = "<group>"; };
+		2ABED3D22743799D00334F6F /* elota-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-14.gif"; sourceTree = "<group>"; };
+		2ABED3D32743799D00334F6F /* elota-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-5.gif"; sourceTree = "<group>"; };
+		2ABED3D42743799D00334F6F /* elota-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-6.gif"; sourceTree = "<group>"; };
+		2ABED3D52743799D00334F6F /* elota-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-2.gif"; sourceTree = "<group>"; };
+		2ABED3D62743799D00334F6F /* elota-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-16.gif"; sourceTree = "<group>"; };
+		2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-6.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,21 +324,21 @@
 		2A26CDF226B9DF6700A1B876 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
+				2A26CDF926B9DF6900A1B876 /* Preview Content */,
 				2A8CD66D271C87580082BC93 /* Giphs */,
-				2A55C43526C02B23005851CD /* Cookbook.entitlements */,
-				2A26CDF326B9DF6700A1B876 /* CookbookApp.swift */,
-				2A26CDF526B9DF6700A1B876 /* RecipePageView.swift */,
 				2A26CDF726B9DF6900A1B876 /* Assets.xcassets */,
 				2A26CDFC26B9DF6900A1B876 /* Info.plist */,
-				2A26CDF926B9DF6900A1B876 /* Preview Content */,
+				2A55C43526C02B23005851CD /* Cookbook.entitlements */,
+				2A26CDF326B9DF6700A1B876 /* CookbookApp.swift */,
 				2AB54A5126BC765300119FBF /* Cookbook.swift */,
-				2A55C43626C03FD6005851CD /* Recipe.swift */,
-				2A64FDF426D8979F008E4806 /* MotherView.swift */,
-				2A64FDF626D8983E008E4806 /* ViewRouter.swift */,
-				2A0DB2B0270D3C99000F9E88 /* Ingredient.swift */,
-				2A8CD66B271C864A0082BC93 /* GIFImage.swift */,
-				0A93FE0727223E10002994E5 /* TableOfContentsPageView.swift */,
 				0A2A929A272BA18E00AFC84E /* cookbookPageView.swift */,
+				2A8CD66B271C864A0082BC93 /* GIFImage.swift */,
+				2A0DB2B0270D3C99000F9E88 /* Ingredient.swift */,
+				2A64FDF426D8979F008E4806 /* MotherView.swift */,
+				2A26CDF526B9DF6700A1B876 /* RecipePageView.swift */,
+				2A55C43626C03FD6005851CD /* Recipe.swift */,
+				0A93FE0727223E10002994E5 /* TableOfContentsPageView.swift */,
+				2A64FDF626D8983E008E4806 /* ViewRouter.swift */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
@@ -285,6 +401,7 @@
 				2A18A3D52731B50500D47866 /* butter-chicken-step-3.gif */,
 				2A18A3D72731B5BA00D47866 /* butter-chicken-step-4.gif */,
 				2A18A3D92731B62F00D47866 /* butter-chicken-step-5.gif */,
+				2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */,
 				2A18A3DD2731B7E900D47866 /* butter-chicken-step-7.gif */,
 				2A18A3DF2731B85400D47866 /* butter-chicken-step-8.gif */,
 				2A18A3E12731B8F200D47866 /* butter-chicken-step-9.gif */,
@@ -313,15 +430,104 @@
 		2A8CD66D271C87580082BC93 /* Giphs */ = {
 			isa = PBXGroup;
 			children = (
+				2ABED3C52743798E00334F6F /* Elota */,
+				2ABED3AA27436FF000334F6F /* Ram-Don */,
+				2A694ECE273851CC00910AA2 /* Butter Chicken */,
+				2ABED373274197BF00334F6F /* Chicken and Potatos */,
+				2ABED372274197B200334F6F /* Common */,
+				2A694EBF27384A7100910AA2 /* Soft Tofu Soup */,
+			);
+			path = Giphs;
+			sourceTree = "<group>";
+		};
+		2ABED372274197B200334F6F /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				2A8CD67E271FD4E20082BC93 /* green-onion.gif */,
 				2A8CD67C271F52F60082BC93 /* chopping-white-onion.gif */,
 				2A8CD678271F52CC0082BC93 /* add-sugar.gif */,
 				2A8CD67A271F52DA0082BC93 /* oil-pan.gif */,
 				2A8CD672271CC06E0082BC93 /* mince-pork.gif */,
-				2A694ECE273851CC00910AA2 /* Butter Chicken */,
-				2A694EBF27384A7100910AA2 /* Soft Tofu Soup */,
 			);
-			path = Giphs;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2ABED373274197BF00334F6F /* Chicken and Potatos */ = {
+			isa = PBXGroup;
+			children = (
+				2ABED37B274197D800334F6F /* chicken-potatoes-1.gif */,
+				2ABED38D274197DA00334F6F /* chicken-potatoes-2.gif */,
+				2ABED37A274197D700334F6F /* chicken-potatoes-3.gif */,
+				2ABED37F274197D800334F6F /* chicken-potatoes-4.gif */,
+				2ABED382274197D900334F6F /* chicken-potatoes-5.gif */,
+				2ABED375274197D700334F6F /* chicken-potatoes-6.gif */,
+				2ABED37D274197D800334F6F /* chicken-potatoes-7.gif */,
+				2ABED380274197D900334F6F /* chicken-potatoes-8.gif */,
+				2ABED37E274197D800334F6F /* chicken-potatoes-9.gif */,
+				2ABED376274197D700334F6F /* chicken-potatoes-10.gif */,
+				2ABED381274197D900334F6F /* chicken-potatoes-11.gif */,
+				2ABED38C274197DA00334F6F /* chicken-potatoes-12.gif */,
+				2ABED38B274197DA00334F6F /* chicken-potatoes-13.gif */,
+				2ABED37C274197D800334F6F /* chicken-potatoes-14.gif */,
+				2ABED388274197D900334F6F /* chicken-potatoes-15.gif */,
+				2ABED383274197D900334F6F /* chicken-potatoes-16.gif */,
+				2ABED377274197D700334F6F /* chicken-potatoes-17.gif */,
+				2ABED384274197D900334F6F /* chicken-potatoes-18.gif */,
+				2ABED379274197D700334F6F /* chicken-potatoes-19.gif */,
+				2ABED38A274197DA00334F6F /* chicken-potatoes-20.gif */,
+				2ABED374274197D700334F6F /* chicken-potatoes-21.gif */,
+				2ABED378274197D700334F6F /* chicken-potatoes-22.gif */,
+				2ABED389274197DA00334F6F /* chicken-potatoes-23.gif */,
+				2ABED38E274197DA00334F6F /* chicken-potatoes-24.gif */,
+				2ABED385274197D900334F6F /* chicken-potatoes-25.gif */,
+				2ABED386274197D900334F6F /* chicken-potatoes-26.gif */,
+				2ABED387274197D900334F6F /* chicken-potatoes-27.gif */,
+			);
+			path = "Chicken and Potatos";
+			sourceTree = "<group>";
+		};
+		2ABED3AA27436FF000334F6F /* Ram-Don */ = {
+			isa = PBXGroup;
+			children = (
+				2ABED3B22743700400334F6F /* Ram-don-1.gif */,
+				2ABED3B62743700400334F6F /* Ram-don-2.gif */,
+				2ABED3AD2743700300334F6F /* Ram-don-3.gif */,
+				2ABED3AF2743700400334F6F /* Ram-don-4.gif */,
+				2ABED3B52743700400334F6F /* Ram-don-5.gif */,
+				2ABED3B42743700400334F6F /* Ram-don-6.gif */,
+				2ABED3AB2743700300334F6F /* Ram-don-7.gif */,
+				2ABED3B72743700500334F6F /* Ram-don-8.gif */,
+				2ABED3B12743700400334F6F /* Ram-don-9.gif */,
+				2ABED3AE2743700300334F6F /* Ram-don-10.gif */,
+				2ABED3B02743700400334F6F /* Ram-don-11.gif */,
+				2ABED3B32743700400334F6F /* Ram-don-12.gif */,
+				2ABED3AC2743700300334F6F /* Ram-don-13.gif */,
+			);
+			path = "Ram-Don";
+			sourceTree = "<group>";
+		};
+		2ABED3C52743798E00334F6F /* Elota */ = {
+			isa = PBXGroup;
+			children = (
+				2ABED3CA2743799C00334F6F /* elota-1.gif */,
+				2ABED3D52743799D00334F6F /* elota-2.gif */,
+				2ABED3C72743799B00334F6F /* elota-3.gif */,
+				2ABED3C82743799B00334F6F /* elota-4.gif */,
+				2ABED3D32743799D00334F6F /* elota-5.gif */,
+				2ABED3D42743799D00334F6F /* elota-6.gif */,
+				2ABED3D02743799D00334F6F /* elota-7.gif */,
+				2ABED3D12743799D00334F6F /* elota-8.gif */,
+				2ABED3CE2743799C00334F6F /* elota-9.gif */,
+				2ABED3CB2743799C00334F6F /* elota-10.gif */,
+				2ABED3C62743799B00334F6F /* elota-11.gif */,
+				2ABED3CF2743799C00334F6F /* elota-12.gif */,
+				2ABED3C92743799B00334F6F /* elota-13.gif */,
+				2ABED3D22743799D00334F6F /* elota-14.gif */,
+				2ABED3CC2743799C00334F6F /* elota-15.gif */,
+				2ABED3D62743799D00334F6F /* elota-16.gif */,
+				2ABED3CD2743799C00334F6F /* elota-17.gif */,
+			);
+			path = Elota;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,56 +633,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABED3DF2743799D00334F6F /* elota-9.gif in Resources */,
+				2ABED3D72743799D00334F6F /* elota-11.gif in Resources */,
+				2ABED3B82743700500334F6F /* Ram-don-7.gif in Resources */,
 				0A79E37E2720D92B00F36D00 /* sundubu-step-5.gif in Resources */,
+				2ABED3A5274197DA00334F6F /* chicken-potatoes-20.gif in Resources */,
+				2ABED38F274197DA00334F6F /* chicken-potatoes-21.gif in Resources */,
 				2A18A3E62731BA0400D47866 /* butter-chicken-step-11.gif in Resources */,
 				2A18A3F22731BCDF00D47866 /* butter-chicken-step-17.gif in Resources */,
+				2ABED399274197DA00334F6F /* chicken-potatoes-9.gif in Resources */,
+				2ABED394274197DA00334F6F /* chicken-potatoes-19.gif in Resources */,
 				2A26CDFB26B9DF6900A1B876 /* Preview Assets.xcassets in Resources */,
+				2ABED39E274197DA00334F6F /* chicken-potatoes-16.gif in Resources */,
+				2ABED3A1274197DA00334F6F /* chicken-potatoes-26.gif in Resources */,
 				0A79E3802721D13900F36D00 /* sundubu-step-6.gif in Resources */,
+				2ABED3DB2743799D00334F6F /* elota-1.gif in Resources */,
 				2A18A3EE2731BBE200D47866 /* butter-chicken-step-15.gif in Resources */,
+				2ABED391274197DA00334F6F /* chicken-potatoes-10.gif in Resources */,
+				2ABED39D274197DA00334F6F /* chicken-potatoes-5.gif in Resources */,
 				2A18A3D82731B5BB00D47866 /* butter-chicken-step-4.gif in Resources */,
+				2ABED3A0274197DA00334F6F /* chicken-potatoes-25.gif in Resources */,
 				2A8CD67D271F52F60082BC93 /* chopping-white-onion.gif in Resources */,
+				2ABED3E22743799D00334F6F /* elota-8.gif in Resources */,
+				2ABED39C274197DA00334F6F /* chicken-potatoes-11.gif in Resources */,
 				2A694EC127384E1E00910AA2 /* sundubu-step-11.gif in Resources */,
+				2ABED3BD2743700500334F6F /* Ram-don-11.gif in Resources */,
 				2A18A4022731C12B00D47866 /* butter-chicken-step-25.gif in Resources */,
+				2ABED3E02743799D00334F6F /* elota-12.gif in Resources */,
+				2ABED3C22743700500334F6F /* Ram-don-5.gif in Resources */,
 				2A18A3FA2731BF2100D47866 /* butter-chicken-step-21.gif in Resources */,
 				2A18A3E22731B8F200D47866 /* butter-chicken-step-9.gif in Resources */,
 				0A79E3842721D46300F36D00 /* sundubu-step-8.gif in Resources */,
 				2A26CDF826B9DF6900A1B876 /* Assets.xcassets in Resources */,
 				0A79E3882721D88300F36D00 /* sundubu-step-10.gif in Resources */,
+				2ABED3E52743799D00334F6F /* elota-6.gif in Resources */,
+				2ABED39F274197DA00334F6F /* chicken-potatoes-18.gif in Resources */,
 				2A8CD679271F52CC0082BC93 /* add-sugar.gif in Resources */,
 				2A18A3DE2731B7E900D47866 /* butter-chicken-step-7.gif in Resources */,
 				2A18A3E02731B85400D47866 /* butter-chicken-step-8.gif in Resources */,
 				2A8CD673271CC06E0082BC93 /* mince-pork.gif in Resources */,
 				2A18A3E82731BA9000D47866 /* butter-chicken-step-12.gif in Resources */,
 				2A8CD687271FD9FB0082BC93 /* sundubu-step-3.gif in Resources */,
+				2ABED3DD2743799D00334F6F /* elota-15.gif in Resources */,
 				2A18A3EC2731BB6100D47866 /* butter-chicken-step-14.gif in Resources */,
 				2A18A4062731C21100D47866 /* butter-chicken-step-27.gif in Resources */,
+				2ABED3E12743799D00334F6F /* elota-7.gif in Resources */,
 				2A694EC727384F9000910AA2 /* sundubu-step-14.gif in Resources */,
 				2A18A3EA2731BAF300D47866 /* butter-chicken-step-13.gif in Resources */,
+				2ABED3D82743799D00334F6F /* elota-3.gif in Resources */,
+				2ABED3C42743700500334F6F /* Ram-don-8.gif in Resources */,
+				2ABED3E62743799D00334F6F /* elota-2.gif in Resources */,
+				2ABED3DC2743799D00334F6F /* elota-10.gif in Resources */,
 				2A18A3E42731B97300D47866 /* butter-chicken-step-10.gif in Resources */,
 				2A18A3FC2731BF9400D47866 /* butter-chicken-step-22.gif in Resources */,
+				2ABED3BC2743700500334F6F /* Ram-don-4.gif in Resources */,
+				2ABED397274197DA00334F6F /* chicken-potatoes-14.gif in Resources */,
+				2ABED3BE2743700500334F6F /* Ram-don-9.gif in Resources */,
+				2ABED3B92743700500334F6F /* Ram-don-13.gif in Resources */,
 				2A18A3D42731B42300D47866 /* butter-chicken-step-2.gif in Resources */,
+				2ABED3DE2743799D00334F6F /* elota-17.gif in Resources */,
 				2A694ECB273850BF00910AA2 /* sundubu-step-16.gif in Resources */,
 				2A18A3F42731BD9500D47866 /* butter-chicken-step-18.gif in Resources */,
+				2ABED3C02743700500334F6F /* Ram-don-12.gif in Resources */,
+				2ABED3BA2743700500334F6F /* Ram-don-3.gif in Resources */,
+				2ABED3BF2743700500334F6F /* Ram-don-1.gif in Resources */,
+				2ABED3E42743799D00334F6F /* elota-5.gif in Resources */,
+				2ABED390274197DA00334F6F /* chicken-potatoes-6.gif in Resources */,
 				2A18A4002731C0A800D47866 /* butter-chicken-step-24.gif in Resources */,
+				2ABED398274197DA00334F6F /* chicken-potatoes-7.gif in Resources */,
+				2ABED3D92743799D00334F6F /* elota-4.gif in Resources */,
+				2ABED3A3274197DA00334F6F /* chicken-potatoes-15.gif in Resources */,
 				2A18A3FE2731C04600D47866 /* butter-chicken-step-23.gif in Resources */,
+				2ABED39B274197DA00334F6F /* chicken-potatoes-8.gif in Resources */,
 				2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */,
+				2ABED3E32743799D00334F6F /* elota-14.gif in Resources */,
+				2ABED3DA2743799D00334F6F /* elota-13.gif in Resources */,
+				2ABED392274197DA00334F6F /* chicken-potatoes-17.gif in Resources */,
+				2ABED3A7274197DA00334F6F /* chicken-potatoes-12.gif in Resources */,
 				2A18A3D22731B32100D47866 /* butter-chicken-step-1.gif in Resources */,
+				2ABED3E927443B8300334F6F /* butter-chicken-step-6.gif in Resources */,
+				2ABED3C32743700500334F6F /* Ram-don-2.gif in Resources */,
+				2ABED3C12743700500334F6F /* Ram-don-6.gif in Resources */,
 				2A18A3F62731BE1500D47866 /* butter-chicken-step-19.gif in Resources */,
 				2A18A3F82731BE9400D47866 /* butter-chicken-step-20.gif in Resources */,
+				2ABED393274197DA00334F6F /* chicken-potatoes-22.gif in Resources */,
 				2A694EC527384F0500910AA2 /* sundubu-step-13.gif in Resources */,
 				0A79E3862721D7C100F36D00 /* sundubu-step-9.gif in Resources */,
+				2ABED396274197DA00334F6F /* chicken-potatoes-1.gif in Resources */,
 				2A694EC327384E8E00910AA2 /* sundubu-step-12.gif in Resources */,
+				2ABED3A8274197DA00334F6F /* chicken-potatoes-2.gif in Resources */,
 				2A8CD681271FD7970082BC93 /* sundubu-step-1.gif in Resources */,
 				2A694ECD2738514F00910AA2 /* sundubu-step-17.gif in Resources */,
 				2A18A3DA2731B62F00D47866 /* butter-chicken-step-5.gif in Resources */,
+				2ABED395274197DA00334F6F /* chicken-potatoes-3.gif in Resources */,
 				0A79E3822721D2EA00F36D00 /* sundubu-step-7.gif in Resources */,
 				2A18A3F02731BC7300D47866 /* butter-chicken-step-16.gif in Resources */,
 				2A18A4042731C19E00D47866 /* butter-chicken-step-26.gif in Resources */,
+				2ABED3BB2743700500334F6F /* Ram-don-10.gif in Resources */,
+				2ABED3A9274197DA00334F6F /* chicken-potatoes-24.gif in Resources */,
 				2A18A3D62731B50600D47866 /* butter-chicken-step-3.gif in Resources */,
+				2ABED39A274197DA00334F6F /* chicken-potatoes-4.gif in Resources */,
+				2ABED3A2274197DA00334F6F /* chicken-potatoes-27.gif in Resources */,
 				0A79E37C2720D78000F36D00 /* sundubu-step-4.gif in Resources */,
 				2A8CD67F271FD4E20082BC93 /* green-onion.gif in Resources */,
 				2A694EC92738501700910AA2 /* sundubu-step-15.gif in Resources */,
 				2A8CD683271FD8BC0082BC93 /* sundubu-step-2.gif in Resources */,
+				2ABED3A6274197DA00334F6F /* chicken-potatoes-13.gif in Resources */,
+				2ABED3E72743799D00334F6F /* elota-16.gif in Resources */,
+				2ABED3A4274197DA00334F6F /* chicken-potatoes-23.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
