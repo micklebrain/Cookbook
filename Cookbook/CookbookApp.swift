@@ -102,7 +102,7 @@ struct CookbookApp: App {
                             "white onion"]),
         
         Recipe(name: "Chicken and potato",
-               ingredients: [""],
+               ingredients: ["Chicken", "Potatoes", "Eggs"],
                recipeSteps: [
                 recipeStep(title: "Slice onions", imageTitle: "chicken-potatoes-1"),
                 recipeStep(title: "Add olive oil to pan", imageTitle: "chicken-potatoes-2"),
@@ -157,45 +157,38 @@ struct CookbookApp: App {
                spices: [""],
                vegetables: [""]),
         
-        
         Recipe(name: "Elota",
-               ingredients: ["Butter", "Corn", "Mayonnaise", "Sour Cream", "Sugar", "Garlic"],
+               ingredients: ["Butter", "Cotija cheese", "Corn", "Mayonnaise", "Sour Cream"],
                recipeSteps: [
                 recipeStep(title: "Butter corn", imageTitle: "elota-1"),
-                recipeStep(title: "Season corn", imageTitle: "elota-2"),
-                recipeStep(title: "Chop cilantro", imageTitle: "elota-3"),
+                recipeStep(title: "Season corn with salt, pepper, garlic powder, and onion powder", imageTitle: "elota-2"),
+                recipeStep(title: "Chop up cilantro", imageTitle: "elota-3"),
                 recipeStep(title: "Add 1/4 cup mayonnaise", imageTitle: "elota-4"),
                 recipeStep(title: "Add 1/4 cup sour cream", imageTitle: "elota-5"),
-                recipeStep(title: "Squeze in lime juice", imageTitle: "elota-6"),
+                recipeStep(title: "Cut and squeeze in lime juice", imageTitle: "elota-6"),
                 recipeStep(title: "Add cilantro", imageTitle: "elota-7"),
-                recipeStep(title: "Add Tajin", imageTitle: "elota-8"),
-                recipeStep(title: "Mix up", imageTitle: "elota-9"),
-                recipeStep(title: "Break up Cotija cheese", imageTitle: "elota-10"),
-                recipeStep(title: "Zest in Lime", imageTitle: "elota-11"),
-                recipeStep(title: "Skewer corn", imageTitle: "elota-12"),
-                recipeStep(title: "Grill corn until it has a little char", imageTitle: "elota-13"),
-                recipeStep(title: "Coat corn with sauce", imageTitle: "elota-14"),
-                recipeStep(title: "Coat corn with cheese", imageTitle: "elota-15"),
-                recipeStep(title: "Sprinkle Tajin on corn", imageTitle: "elota-16"),
-                recipeStep(title: "Garnish with cilantro and enjoy", imageTitle: "elota-17"),
+                recipeStep(title: "Add teaspoon of garlic", imageTitle: "elota-8"),
+                recipeStep(title: "Sprinkle Tajin", imageTitle: "elota-9"),
+                recipeStep(title: "Add pinch of sugar", imageTitle: "elota-10"),
+                recipeStep(title: "Mix up", imageTitle: "elota-11"),
+                recipeStep(title: "Break up Cotija cheese", imageTitle: "elota-12"),
+                recipeStep(title: "Zest in Lime", imageTitle: "elota-13"),
+                recipeStep(title: "Skewer corn and oil grill", imageTitle: "elota-14"),
+                recipeStep(title: "Grill corn until it has a little char", imageTitle: "elota-15"),
+                recipeStep(title: "Coat corn with sauce", imageTitle: "elota-16"),
+                recipeStep(title: "Coat corn with cheese", imageTitle: "elota-17"),
+                recipeStep(title: "Sprinkle Tajin on corn", imageTitle: "elota-18"),
+                recipeStep(title: "Garnish with cilantro and enjoy", imageTitle: "elota-19"),
                ],
-               spices: ["Salt", "Pepper", "Onion Powder", "Garlic Powder", "Tajin"],
-               vegetables: ["Cilantro", "Lime"])
+               spices: [Spices.salt.rawValue, Spices.pepper.rawValue, "Onion Powder", "Garlic Powder", "Tajin", "Sugar"],
+               vegetables: ["Cilantro", "Garlic", "Lime"])
     ])
     
-    //
     //    addRecipe(recipe: Recipe(name: "Baked Salmon",
     //                               ingredients: ["Salmon",
     //                                             Spices.pepper.rawValue,
     //                                             Spices.salt.rawValue,],
     //                               recipeSteps: []))
-    //
-    //    addRecipe(recipe: Recipe(name: "Steak and Potatoes",
-    //                                       ingredients: ["Steak",
-    //                                                     "Potatoes",
-    //                                                     Spices.pepper.rawValue,
-    //                                                     Spices.salt.rawValue,],
-    //                                       recipeSteps: []))
     //
     //    addRecipe(recipe: Recipe(name: "Brocolli Cheddar Soup",
     //                                      ingredients: ["Broccoli florets",
@@ -204,18 +197,25 @@ struct CookbookApp: App {
     //                                      recipeSteps: []))
     //
     //    addRecipe(recipe: Recipe(name: "Banh Xeo",
-    //                                      ingredients: ["Shrimp",
-    //                                                    "Cocunut cream",
-    //                                                    "Green onion",
-    //                                                    "Pork belly",
-    //                                                    "Onion",
-    //                                                    "bean sprouts",
-    //                                                    "Dry mung beans",
-    //                                                    "Mustard greens",
-    //                                                    "Mint",
-    //                                                    "Cilantro",
-    //                                                    "Vietnamese perilla"],
+//                                        ingredients: ["Shrimp",
+//                                                      "Cocunut cream",
+//                                                      "Green onion",
+//                                                      "Pork belly",
+//                                                      "Onion",
+//                                                      "bean sprouts",
+//                                                      "Dry mung beans",
+//                                                      "Mustard greens",
+//                                                      "Mint",
+//                                                      "Cilantro",
+//                                                      "Vietnamese perilla"],
     //                                      recipeSteps: []))
+    //
+    //    addRecipe(recipe: Recipe(name: "Steak and Potatoes",
+    //                                       ingredients: ["Steak",
+    //                                                     "Potatoes",
+    //                                                     Spices.pepper.rawValue,
+    //                                                     Spices.salt.rawValue,],
+    //                                       recipeSteps: []))
     
     
     @StateObject var viewRouter = ViewRouter()

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct RecipePageView: View {
-        
+    
     var title: String
     var recipe: Recipe
-        
+    
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var ingredientImageData: Data? = nil
     @State private var vibrateOnRing = false
-  
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -29,7 +29,7 @@ struct RecipePageView: View {
                 Text(title).padding()
                 Text("Produce 🥩").padding()
                 Text(recipe.ingredients.joined(separator: ", ")).padding()
-                Text("Spices 🌶 and Herbs ").padding()
+                Text("Spices 🌶 and Herbs 🌿").padding()
                 Text(recipe.spices.joined(separator: ", ")).padding()
                 Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
@@ -38,49 +38,46 @@ struct RecipePageView: View {
                     if $0 != recipe.recipeSteps.count {
                         Text("\($0+1). \(recipe.recipeSteps[$0].title)")
                         if (recipe.recipeSteps[$0].imageTitle != "") {
-//                            let height = UIScreen.main.bounds.height * 0.9
+                            // let height = UIScreen.main.bounds.height * 0.9
                             GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
+                            
+//                            DispatchQueue.main.async {
+//                                GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
+//                            }
                         }
-//                        if let data = ingredientImageData {
-//                            GIFImage(data: data)
-//                                .frame(width: 300)
-//                        } else {
-//                            Text("Loading...")
-//                                .onAppear(perform: loadData)
-//                        }
+                        //                        if let data = ingredientImageData {
+                        //                            GIFImage(data: data)
+                        //                                .frame(width: 300)
+                        //                        } else {
+                        //                            Text("Loading...")
+                        //                                .onAppear(perform: loadData)
+                        //                        }
                     }
                 }
                 
-//                Button(action: {
-//                    withAnimation {
-//                        let nextRecipePage = viewRouter.nextRecipe()
-//                        if viewRouter.currentRecipePage == 0 {
-//                            viewRouter.homePage = true
-//                        } else {
-//                            viewRouter.currentPage = nextRecipePage
-//                        }
-//                    }
-//                }) {
-//                    NextRecipeContent()
-//                }
+                //                Button(action: {
+                //                    withAnimation {
+                //                        let nextRecipePage = viewRouter.nextRecipe()
+                //                        if viewRouter.currentRecipePage == 0 {
+                //                            viewRouter.homePage = true
+                //                        } else {
+                //                            viewRouter.currentPage = nextRecipePage
+                //                        }
+                //                    }
+                //                }) {
+                //                    NextRecipeContent()
+                //                }
             }
         }
     }
     
-//    private func loadData() {
-//        let task = URLSession.shared.dataTask(with: URL(string: "https://github.com/globulus/swiftui-webview/raw/main/Images/preview_macos.gif?raw=true")!) { data, response, error in
-//            ingredientImageData = data
-//        }
-//        task.resume()
-//      }
+    //    private func loadData() {
+    //        let task = URLSession.shared.dataTask(with: URL(string: "https://github.com/globulus/swiftui-webview/raw/main/Images/preview_macos.gif?raw=true")!) { data, response, error in
+    //            ingredientImageData = data
+    //        }
+    //        task.resume()
+    //      }
     
-}
-
-struct SecondPage: View {
-    var body: some View {
-        Text("Second Page")
-            .padding()
-    }
 }
 
 struct HomeButtonContent : View {

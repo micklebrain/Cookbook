@@ -109,24 +109,26 @@
 		2ABED3C22743700500334F6F /* Ram-don-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B52743700400334F6F /* Ram-don-5.gif */; };
 		2ABED3C32743700500334F6F /* Ram-don-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B62743700400334F6F /* Ram-don-2.gif */; };
 		2ABED3C42743700500334F6F /* Ram-don-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3B72743700500334F6F /* Ram-don-8.gif */; };
-		2ABED3D72743799D00334F6F /* elota-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C62743799B00334F6F /* elota-11.gif */; };
+		2ABED3D72743799D00334F6F /* elota-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C62743799B00334F6F /* elota-13.gif */; };
 		2ABED3D82743799D00334F6F /* elota-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C72743799B00334F6F /* elota-3.gif */; };
 		2ABED3D92743799D00334F6F /* elota-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C82743799B00334F6F /* elota-4.gif */; };
-		2ABED3DA2743799D00334F6F /* elota-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C92743799B00334F6F /* elota-13.gif */; };
+		2ABED3DA2743799D00334F6F /* elota-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3C92743799B00334F6F /* elota-15.gif */; };
 		2ABED3DB2743799D00334F6F /* elota-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CA2743799C00334F6F /* elota-1.gif */; };
-		2ABED3DC2743799D00334F6F /* elota-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CB2743799C00334F6F /* elota-10.gif */; };
-		2ABED3DD2743799D00334F6F /* elota-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CC2743799C00334F6F /* elota-15.gif */; };
-		2ABED3DE2743799D00334F6F /* elota-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CD2743799C00334F6F /* elota-17.gif */; };
-		2ABED3DF2743799D00334F6F /* elota-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CE2743799C00334F6F /* elota-9.gif */; };
-		2ABED3E02743799D00334F6F /* elota-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CF2743799C00334F6F /* elota-12.gif */; };
+		2ABED3DC2743799D00334F6F /* elota-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CB2743799C00334F6F /* elota-12.gif */; };
+		2ABED3DD2743799D00334F6F /* elota-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CC2743799C00334F6F /* elota-17.gif */; };
+		2ABED3DE2743799D00334F6F /* elota-19.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CD2743799C00334F6F /* elota-19.gif */; };
+		2ABED3DF2743799D00334F6F /* elota-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CE2743799C00334F6F /* elota-11.gif */; };
+		2ABED3E02743799D00334F6F /* elota-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3CF2743799C00334F6F /* elota-14.gif */; };
 		2ABED3E12743799D00334F6F /* elota-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D02743799D00334F6F /* elota-7.gif */; };
-		2ABED3E22743799D00334F6F /* elota-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D12743799D00334F6F /* elota-8.gif */; };
-		2ABED3E32743799D00334F6F /* elota-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D22743799D00334F6F /* elota-14.gif */; };
+		2ABED3E22743799D00334F6F /* elota-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D12743799D00334F6F /* elota-9.gif */; };
+		2ABED3E32743799D00334F6F /* elota-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D22743799D00334F6F /* elota-16.gif */; };
 		2ABED3E42743799D00334F6F /* elota-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D32743799D00334F6F /* elota-5.gif */; };
 		2ABED3E52743799D00334F6F /* elota-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D42743799D00334F6F /* elota-6.gif */; };
 		2ABED3E62743799D00334F6F /* elota-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D52743799D00334F6F /* elota-2.gif */; };
-		2ABED3E72743799D00334F6F /* elota-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D62743799D00334F6F /* elota-16.gif */; };
+		2ABED3E72743799D00334F6F /* elota-18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D62743799D00334F6F /* elota-18.gif */; };
 		2ABED3E927443B8300334F6F /* butter-chicken-step-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */; };
+		2ACE435E2745A69F0057C0D0 /* elota-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE435B2745A69F0057C0D0 /* elota-8.gif */; };
+		2ACE435F2745A69F0057C0D0 /* elota-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE435C2745A69F0057C0D0 /* elota-10.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,24 +258,26 @@
 		2ABED3B52743700400334F6F /* Ram-don-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-5.gif"; sourceTree = "<group>"; };
 		2ABED3B62743700400334F6F /* Ram-don-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-2.gif"; sourceTree = "<group>"; };
 		2ABED3B72743700500334F6F /* Ram-don-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ram-don-8.gif"; sourceTree = "<group>"; };
-		2ABED3C62743799B00334F6F /* elota-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-11.gif"; sourceTree = "<group>"; };
+		2ABED3C62743799B00334F6F /* elota-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-13.gif"; sourceTree = "<group>"; };
 		2ABED3C72743799B00334F6F /* elota-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-3.gif"; sourceTree = "<group>"; };
 		2ABED3C82743799B00334F6F /* elota-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-4.gif"; sourceTree = "<group>"; };
-		2ABED3C92743799B00334F6F /* elota-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-13.gif"; sourceTree = "<group>"; };
+		2ABED3C92743799B00334F6F /* elota-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-15.gif"; sourceTree = "<group>"; };
 		2ABED3CA2743799C00334F6F /* elota-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-1.gif"; sourceTree = "<group>"; };
-		2ABED3CB2743799C00334F6F /* elota-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-10.gif"; sourceTree = "<group>"; };
-		2ABED3CC2743799C00334F6F /* elota-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-15.gif"; sourceTree = "<group>"; };
-		2ABED3CD2743799C00334F6F /* elota-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-17.gif"; sourceTree = "<group>"; };
-		2ABED3CE2743799C00334F6F /* elota-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-9.gif"; sourceTree = "<group>"; };
-		2ABED3CF2743799C00334F6F /* elota-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-12.gif"; sourceTree = "<group>"; };
+		2ABED3CB2743799C00334F6F /* elota-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-12.gif"; sourceTree = "<group>"; };
+		2ABED3CC2743799C00334F6F /* elota-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-17.gif"; sourceTree = "<group>"; };
+		2ABED3CD2743799C00334F6F /* elota-19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-19.gif"; sourceTree = "<group>"; };
+		2ABED3CE2743799C00334F6F /* elota-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-11.gif"; sourceTree = "<group>"; };
+		2ABED3CF2743799C00334F6F /* elota-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-14.gif"; sourceTree = "<group>"; };
 		2ABED3D02743799D00334F6F /* elota-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-7.gif"; sourceTree = "<group>"; };
-		2ABED3D12743799D00334F6F /* elota-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-8.gif"; sourceTree = "<group>"; };
-		2ABED3D22743799D00334F6F /* elota-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-14.gif"; sourceTree = "<group>"; };
+		2ABED3D12743799D00334F6F /* elota-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-9.gif"; sourceTree = "<group>"; };
+		2ABED3D22743799D00334F6F /* elota-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-16.gif"; sourceTree = "<group>"; };
 		2ABED3D32743799D00334F6F /* elota-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-5.gif"; sourceTree = "<group>"; };
 		2ABED3D42743799D00334F6F /* elota-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-6.gif"; sourceTree = "<group>"; };
 		2ABED3D52743799D00334F6F /* elota-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-2.gif"; sourceTree = "<group>"; };
-		2ABED3D62743799D00334F6F /* elota-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-16.gif"; sourceTree = "<group>"; };
+		2ABED3D62743799D00334F6F /* elota-18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-18.gif"; sourceTree = "<group>"; };
 		2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-6.gif"; sourceTree = "<group>"; };
+		2ACE435B2745A69F0057C0D0 /* elota-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-8.gif"; sourceTree = "<group>"; };
+		2ACE435C2745A69F0057C0D0 /* elota-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-10.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,16 +520,18 @@
 				2ABED3D32743799D00334F6F /* elota-5.gif */,
 				2ABED3D42743799D00334F6F /* elota-6.gif */,
 				2ABED3D02743799D00334F6F /* elota-7.gif */,
-				2ABED3D12743799D00334F6F /* elota-8.gif */,
-				2ABED3CE2743799C00334F6F /* elota-9.gif */,
-				2ABED3CB2743799C00334F6F /* elota-10.gif */,
-				2ABED3C62743799B00334F6F /* elota-11.gif */,
-				2ABED3CF2743799C00334F6F /* elota-12.gif */,
-				2ABED3C92743799B00334F6F /* elota-13.gif */,
-				2ABED3D22743799D00334F6F /* elota-14.gif */,
-				2ABED3CC2743799C00334F6F /* elota-15.gif */,
-				2ABED3D62743799D00334F6F /* elota-16.gif */,
-				2ABED3CD2743799C00334F6F /* elota-17.gif */,
+				2ACE435B2745A69F0057C0D0 /* elota-8.gif */,
+				2ABED3D12743799D00334F6F /* elota-9.gif */,
+				2ACE435C2745A69F0057C0D0 /* elota-10.gif */,
+				2ABED3CE2743799C00334F6F /* elota-11.gif */,
+				2ABED3CB2743799C00334F6F /* elota-12.gif */,
+				2ABED3C62743799B00334F6F /* elota-13.gif */,
+				2ABED3CF2743799C00334F6F /* elota-14.gif */,
+				2ABED3C92743799B00334F6F /* elota-15.gif */,
+				2ABED3D22743799D00334F6F /* elota-16.gif */,
+				2ABED3CC2743799C00334F6F /* elota-17.gif */,
+				2ABED3D62743799D00334F6F /* elota-18.gif */,
+				2ABED3CD2743799C00334F6F /* elota-19.gif */,
 			);
 			path = Elota;
 			sourceTree = "<group>";
@@ -633,8 +639,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ABED3DF2743799D00334F6F /* elota-9.gif in Resources */,
-				2ABED3D72743799D00334F6F /* elota-11.gif in Resources */,
+				2ABED3DF2743799D00334F6F /* elota-11.gif in Resources */,
+				2ABED3D72743799D00334F6F /* elota-13.gif in Resources */,
 				2ABED3B82743700500334F6F /* Ram-don-7.gif in Resources */,
 				0A79E37E2720D92B00F36D00 /* sundubu-step-5.gif in Resources */,
 				2ABED3A5274197DA00334F6F /* chicken-potatoes-20.gif in Resources */,
@@ -654,12 +660,12 @@
 				2A18A3D82731B5BB00D47866 /* butter-chicken-step-4.gif in Resources */,
 				2ABED3A0274197DA00334F6F /* chicken-potatoes-25.gif in Resources */,
 				2A8CD67D271F52F60082BC93 /* chopping-white-onion.gif in Resources */,
-				2ABED3E22743799D00334F6F /* elota-8.gif in Resources */,
+				2ABED3E22743799D00334F6F /* elota-9.gif in Resources */,
 				2ABED39C274197DA00334F6F /* chicken-potatoes-11.gif in Resources */,
 				2A694EC127384E1E00910AA2 /* sundubu-step-11.gif in Resources */,
 				2ABED3BD2743700500334F6F /* Ram-don-11.gif in Resources */,
 				2A18A4022731C12B00D47866 /* butter-chicken-step-25.gif in Resources */,
-				2ABED3E02743799D00334F6F /* elota-12.gif in Resources */,
+				2ABED3E02743799D00334F6F /* elota-14.gif in Resources */,
 				2ABED3C22743700500334F6F /* Ram-don-5.gif in Resources */,
 				2A18A3FA2731BF2100D47866 /* butter-chicken-step-21.gif in Resources */,
 				2A18A3E22731B8F200D47866 /* butter-chicken-step-9.gif in Resources */,
@@ -674,16 +680,17 @@
 				2A8CD673271CC06E0082BC93 /* mince-pork.gif in Resources */,
 				2A18A3E82731BA9000D47866 /* butter-chicken-step-12.gif in Resources */,
 				2A8CD687271FD9FB0082BC93 /* sundubu-step-3.gif in Resources */,
-				2ABED3DD2743799D00334F6F /* elota-15.gif in Resources */,
+				2ABED3DD2743799D00334F6F /* elota-17.gif in Resources */,
 				2A18A3EC2731BB6100D47866 /* butter-chicken-step-14.gif in Resources */,
 				2A18A4062731C21100D47866 /* butter-chicken-step-27.gif in Resources */,
+				2ACE435F2745A69F0057C0D0 /* elota-10.gif in Resources */,
 				2ABED3E12743799D00334F6F /* elota-7.gif in Resources */,
 				2A694EC727384F9000910AA2 /* sundubu-step-14.gif in Resources */,
 				2A18A3EA2731BAF300D47866 /* butter-chicken-step-13.gif in Resources */,
 				2ABED3D82743799D00334F6F /* elota-3.gif in Resources */,
 				2ABED3C42743700500334F6F /* Ram-don-8.gif in Resources */,
 				2ABED3E62743799D00334F6F /* elota-2.gif in Resources */,
-				2ABED3DC2743799D00334F6F /* elota-10.gif in Resources */,
+				2ABED3DC2743799D00334F6F /* elota-12.gif in Resources */,
 				2A18A3E42731B97300D47866 /* butter-chicken-step-10.gif in Resources */,
 				2A18A3FC2731BF9400D47866 /* butter-chicken-step-22.gif in Resources */,
 				2ABED3BC2743700500334F6F /* Ram-don-4.gif in Resources */,
@@ -691,7 +698,7 @@
 				2ABED3BE2743700500334F6F /* Ram-don-9.gif in Resources */,
 				2ABED3B92743700500334F6F /* Ram-don-13.gif in Resources */,
 				2A18A3D42731B42300D47866 /* butter-chicken-step-2.gif in Resources */,
-				2ABED3DE2743799D00334F6F /* elota-17.gif in Resources */,
+				2ABED3DE2743799D00334F6F /* elota-19.gif in Resources */,
 				2A694ECB273850BF00910AA2 /* sundubu-step-16.gif in Resources */,
 				2A18A3F42731BD9500D47866 /* butter-chicken-step-18.gif in Resources */,
 				2ABED3C02743700500334F6F /* Ram-don-12.gif in Resources */,
@@ -704,10 +711,11 @@
 				2ABED3D92743799D00334F6F /* elota-4.gif in Resources */,
 				2ABED3A3274197DA00334F6F /* chicken-potatoes-15.gif in Resources */,
 				2A18A3FE2731C04600D47866 /* butter-chicken-step-23.gif in Resources */,
+				2ACE435E2745A69F0057C0D0 /* elota-8.gif in Resources */,
 				2ABED39B274197DA00334F6F /* chicken-potatoes-8.gif in Resources */,
 				2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */,
-				2ABED3E32743799D00334F6F /* elota-14.gif in Resources */,
-				2ABED3DA2743799D00334F6F /* elota-13.gif in Resources */,
+				2ABED3E32743799D00334F6F /* elota-16.gif in Resources */,
+				2ABED3DA2743799D00334F6F /* elota-15.gif in Resources */,
 				2ABED392274197DA00334F6F /* chicken-potatoes-17.gif in Resources */,
 				2ABED3A7274197DA00334F6F /* chicken-potatoes-12.gif in Resources */,
 				2A18A3D22731B32100D47866 /* butter-chicken-step-1.gif in Resources */,
@@ -739,7 +747,7 @@
 				2A694EC92738501700910AA2 /* sundubu-step-15.gif in Resources */,
 				2A8CD683271FD8BC0082BC93 /* sundubu-step-2.gif in Resources */,
 				2ABED3A6274197DA00334F6F /* chicken-potatoes-13.gif in Resources */,
-				2ABED3E72743799D00334F6F /* elota-16.gif in Resources */,
+				2ABED3E72743799D00334F6F /* elota-18.gif in Resources */,
 				2ABED3A4274197DA00334F6F /* chicken-potatoes-23.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
