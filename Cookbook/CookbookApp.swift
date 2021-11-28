@@ -10,6 +10,9 @@ import SwiftUI
 @main
 struct CookbookApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    
     @StateObject var cookbook = Cookbook(recipes: [
         Recipe(name: "Butter Chicken (Chicken Tikka Masala)",
                ingredients: ["2 lbs of chicken breasts",

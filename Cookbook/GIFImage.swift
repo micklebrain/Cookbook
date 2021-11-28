@@ -26,14 +26,14 @@ public struct GIFImage: UIViewRepresentable {
         if let data = data {
             return UIGIFImage(data: data)
         } else {
-            return UIGIFImage(name: name ?? "")            
+            return UIGIFImage(name: name ?? "")
         }
     }
     
     public func updateUIView(_ uiView: UIGIFImage, context: Context) {
         if let data = data {
             uiView.updateGIF(data: data)
-        } else {
+        } else {            
             uiView.updateGIF(name: name ?? "")
         }
     }

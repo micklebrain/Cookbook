@@ -24,11 +24,17 @@ class Recipe {
         self.spices = spices
         self.vegetables = vegetables
     }
+    
+    func addRecipeStep(step: recipeStep) {
+        recipeSteps.append(step)
+    }
 }
 
 class recipeStep {
     var title: String
     var imageTitle: String
+    var imageData: Data? = nil
+    
     init(title: String, imageTitle: String = "") {
         self.title = title
         self.imageTitle = imageTitle

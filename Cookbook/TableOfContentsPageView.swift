@@ -24,8 +24,9 @@ struct TableOfContentsPageView: View {
                     withAnimation{
                         viewRouter.currentRecipePage = count
                                                                         
-                        viewRouter.currentPage = RecipePageView(title: recipe.name,                                                                
-                                                                recipe: recipe)
+                        viewRouter.currentPage = RecipePageView(title: recipe.name,
+                                                                recipe: recipe,
+                                                                steps: recipe.recipeSteps)
                         count += 1
                         viewRouter.homePage = false
                     }

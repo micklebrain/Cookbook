@@ -19,7 +19,7 @@ struct MotherView: View {
     var body: some View {
         if viewRouter.homePage{
             viewRouter.homePageView
-        } else {
+        } else {            
             viewRouter.currentPage
         }
     }
