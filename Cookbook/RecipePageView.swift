@@ -6,9 +6,8 @@
 //
 
 import Amplify
-import SwiftUI
 import AWSS3
-import AWSCore
+import SwiftUI
 
 struct RecipePageView: View {
     
@@ -19,10 +18,7 @@ struct RecipePageView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var ingredientImageData: Data? = nil
-    @State private var vibrateOnRing = false
     
-    @State private var imageData: Data? = nil
-        
     var body: some View {
         ScrollView {
             VStack {
@@ -40,7 +36,7 @@ struct RecipePageView: View {
                 Text(recipe.spices.joined(separator: ", ")).padding()
                 Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
-                    
+                
                 // Synchronous from device
 //                ForEach((0...recipe.recipeSteps.count), id: \.self) {
 //                    if $0 != recipe.recipeSteps.count {
@@ -56,19 +52,17 @@ struct RecipePageView: View {
                 ForEach((0...steps.count), id: \.self) {
                     if $0 != steps.count {
                         Text("\($0+1). \(steps[$0].title)")
-//                        if (recipe.recipeSteps[$0].imageTitle != "") {
                         if images.count > $0 {
                             if let data = images[$0] {
-                                    GIFImage(data: data).frame(height: 300)
-    //                                GIFImage(name: "elota-1").frame(height: 300)
-                                } else {
-                                    let imageTitle = steps[$0].imageTitle
-                                    Text("Loading...")
-                                        .onAppear(perform: {
-                                            loadData(key: imageTitle)
-                                        })
-                                }
-    //                        }
+                                GIFImage(data: data).frame(height: 300)
+                                //                                GIFImage(name: "elota-1").frame(height: 300)
+                            } else {
+                                let imageTitle = steps[$0].imageTitle
+                                Text("Loading...")
+                                    .onAppear(perform: {
+                                        loadData(key: imageTitle)
+                                    })
+                            }
                         }  else {
                             let imageTitle = steps[$0].imageTitle
                             Text("Loading...")
@@ -76,9 +70,7 @@ struct RecipePageView: View {
                                     loadData(key: imageTitle)
                                 })
                         }
-
-                        }
-                        
+                    }
                 }
                 
                 //                Button(action: {
@@ -94,12 +86,11 @@ struct RecipePageView: View {
                 //                    NextRecipeContent()
                 //                }
             }
-//            .onAppear {
-//
-//                DispatchQueue.main.async {
-//                    add()
-//                }
-//            }
+            //            .onAppear {
+            //                DispatchQueue.main.async {
+            //                    add()
+            //                }
+            //            }
         }
     }
     
@@ -116,68 +107,49 @@ struct RecipePageView: View {
         tuConf.isAccelerateModeEnabled = false
         
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-
-//                Register a transfer utility object asynchronously
+        
+        // Register a transfer utility object asynchronously
         AWSS3TransferUtility.register(
             with: configuration!,
             transferUtilityConfiguration: tuConf,
             forKey: "utility-key"
         ) { (error) in
-             if let error = error {
-                 print("Error")
-                 //Handle registration error.
-             }
+            if let _ = error {
+                print("Error")
+                // Handle registration error.
+            }
         }
-                                    
-       let expression = AWSS3TransferUtilityDownloadExpression()
-       expression.progressBlock = {(task, progress) in DispatchQueue.main.async(execute: {
-           print("Got here")
-          })
-       }
-
-       var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
-       completionHandler = { (task, URL, data, error) -> Void in
-          DispatchQueue.main.async(execute: {
-              print(data)
-              print(URL)
-              print(task)
-              print(error)
-              print("Got here")
-              
-              Data(capacity: 1)
-              
-              images.append(data!)
-              
-//              for step in recipe.recipeSteps {
-//                  if step.imageTitle == key {
-//                      step.imageData = data
-//                  }
-//              }
-          })
-       }
         
-//                let transferUtility:(AWSS3TransferUtility?) = AWSS3TransferUtility.s3TransferUtility(forKey: "transfer-utility-with-advanced-options")
+        let expression = AWSS3TransferUtilityDownloadExpression()
+        expression.progressBlock = {(task, progress) in DispatchQueue.main.async(execute: {
+            print("Got here")
+        })
+        }
+        
+        var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
+        completionHandler = { (task, URL, data, error) -> Void in
+            DispatchQueue.main.async(execute: {
+                images.append(data!)
+            })
+        }
+        
         let transferUtility = AWSS3TransferUtility.default()
         transferUtility.downloadData(
-             fromBucket: "cookbooka331c28aa140415d930c26412d0f0d99155946-dev",
-             key: key + ".gif",
-             expression: expression,
-             completionHandler: completionHandler
-             ).continueWith {
-                 (task) -> AnyObject? in if let error = task.error {
-                   print("Error: \(error.localizedDescription)")
-                }
-
-                if let _ = task.result {
-                  // Do something with downloadTask.
-
-                }
-                return nil;
+            fromBucket: "cookbooka331c28aa140415d930c26412d0f0d99155946-dev",
+            key: key + ".gif",
+            expression: expression,
+            completionHandler: completionHandler
+        ).continueWith {
+            (task) -> AnyObject? in if let error = task.error {
+                print("Error: \(error.localizedDescription)")
             }
+            if let _ = task.result {
+                // Do something with downloadTask.
+            }
+            return nil;
+        }
     }
 }
-
-
 
 struct HomeButtonContent : View {
     var body: some View {
