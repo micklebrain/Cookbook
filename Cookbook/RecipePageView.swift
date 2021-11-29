@@ -13,11 +13,8 @@ struct RecipePageView: View {
     
     var title: String
     @State var recipe: Recipe
-    @State var steps: [recipeStep]
-    @State var images: [Data] = []
-    
+    @State var recipeImages: [String: Data] = [:]
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var ingredientImageData: Data? = nil
     
     var body: some View {
         ScrollView {
@@ -37,60 +34,30 @@ struct RecipePageView: View {
                 Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
                 
-                // Synchronous from device
-//                ForEach((0...recipe.recipeSteps.count), id: \.self) {
-//                    if $0 != recipe.recipeSteps.count {
-//                        Text("\($0+1). \(recipe.recipeSteps[$0].title)")
-//                        if (recipe.recipeSteps[$0].imageTitle != "") {
-//                            // let height = UIScreen.main.bounds.height * 0.9
-//                            GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
-//                        }
-//                    }
-//                }
-                
-                // Async
-                ForEach((0...steps.count), id: \.self) {
-                    if $0 != steps.count {
-                        Text("\($0+1). \(steps[$0].title)")
-                        if images.count > $0 {
-                            if let data = images[$0] {
-                                GIFImage(data: data).frame(height: 300)
-                                //                                GIFImage(name: "elota-1").frame(height: 300)
-                            } else {
-                                let imageTitle = steps[$0].imageTitle
-                                Text("Loading...")
-                                    .onAppear(perform: {
-                                        loadData(key: imageTitle)
-                                    })
-                            }
-                        }  else {
-                            let imageTitle = steps[$0].imageTitle
-                            Text("Loading...")
-                                .onAppear(perform: {
-                                    loadData(key: imageTitle)
-                                })
-                        }
-                    }
-                }
-                
-                //                Button(action: {
-                //                    withAnimation {
-                //                        let nextRecipePage = viewRouter.nextRecipe()
-                //                        if viewRouter.currentRecipePage == 0 {
-                //                            viewRouter.homePage = true
-                //                        } else {
-                //                            viewRouter.currentPage = nextRecipePage
+                // Synchronous load images from device
+                //                ForEach((0...recipe.recipeSteps.count), id: \.self) {
+                //                    if $0 != recipe.recipeSteps.count {
+                //                        Text("\($0+1). \(recipe.recipeSteps[$0].title)")
+                //                        if (recipe.recipeSteps[$0].imageTitle != "") {
+                //                            // let height = UIScreen.main.bounds.height * 0.9
+                //                            GIFImage(name: recipe.recipeSteps[$0].imageTitle).frame(height: 300)
                 //                        }
                 //                    }
-                //                }) {
-                //                    NextRecipeContent()
                 //                }
+                
+                // Async load images
+                ForEach((0...recipe.recipeSteps.count-1), id: \.self) {
+                    Text("\($0+1). \(recipe.recipeSteps[$0].title)")
+                    if let data = recipeImages[recipe.recipeSteps[$0].imageTitle] {
+                        GIFImage(data: data).frame(height: 300)
+                    } else {
+                        let imageTitle = recipe.recipeSteps[$0].imageTitle
+                        Text("Loading...").onAppear(perform: {
+                            loadData(key: imageTitle)
+                        })
+                    }
+                }
             }
-            //            .onAppear {
-            //                DispatchQueue.main.async {
-            //                    add()
-            //                }
-            //            }
         }
     }
     
@@ -112,7 +79,7 @@ struct RecipePageView: View {
         AWSS3TransferUtility.register(
             with: configuration!,
             transferUtilityConfiguration: tuConf,
-            forKey: "utility-key"
+            forKey: key
         ) { (error) in
             if let _ = error {
                 print("Error")
@@ -122,14 +89,14 @@ struct RecipePageView: View {
         
         let expression = AWSS3TransferUtilityDownloadExpression()
         expression.progressBlock = {(task, progress) in DispatchQueue.main.async(execute: {
-            print("Got here")
-        })
+            // print("Got here")
+            })
         }
         
         var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
         completionHandler = { (task, URL, data, error) -> Void in
             DispatchQueue.main.async(execute: {
-                images.append(data!)
+                recipeImages[key] = data
             })
         }
         
@@ -154,18 +121,6 @@ struct RecipePageView: View {
 struct HomeButtonContent : View {
     var body: some View {
         Text("TABLE OF CONTENTS")
-            .foregroundColor(.white)
-            .frame(width: 200, height: 50)
-            .background(Color.blue)
-            .cornerRadius(15)
-            .padding(.top, 50)
-    }
-}
-
-
-struct NextRecipeContent : View {
-    var body: some View {
-        Text("Next Recipe")
             .foregroundColor(.white)
             .frame(width: 200, height: 50)
             .background(Color.blue)

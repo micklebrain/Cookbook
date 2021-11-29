@@ -33,7 +33,7 @@ class Recipe {
 class recipeStep {
     var title: String
     var imageTitle: String
-    var imageData: Data? = nil
+    @State var imageData: Data? = nil
     
     init(title: String, imageTitle: String = "") {
         self.title = title
