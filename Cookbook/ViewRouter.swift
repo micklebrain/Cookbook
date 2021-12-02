@@ -20,7 +20,9 @@ class ViewRouter: ObservableObject {
         self.currentPage = RecipePageView(title: "All Recipes",
                                           recipe: Recipe(name: "Test",
                                                          ingredients: [],
-                                                         recipeSteps: []))
+                                                         recipeSteps: [],
+                                                         coverImage: ""),
+                                          recipeImages: [:])
         self.homePageView = TableOfContentsPageView()
     }
     

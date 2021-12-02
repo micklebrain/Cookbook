@@ -12,25 +12,32 @@ class Recipe {
     var name: String
     var ingredients: [String]
     var preparation_steps = [""]
-    var recipeSteps: [recipeStep]
+    var recipeSteps: [RecipeStep]
     var spices: [String]
     var vegetables: [String]
     var cuisine = ""
+    var coverImage: String
     
-    init(name: String, ingredients: [String], recipeSteps: [recipeStep], spices: [String] = [""], vegetables: [String] = [""]) {
+    init(name: String,
+         ingredients: [String],
+         recipeSteps: [RecipeStep],
+         spices: [String] = [""],
+         vegetables: [String] = [""],
+         coverImage: String) {
         self.name = name
         self.ingredients = ingredients
         self.recipeSteps = recipeSteps
         self.spices = spices
         self.vegetables = vegetables
+        self.coverImage = coverImage
     }
     
-    func addRecipeStep(step: recipeStep) {
+    func addRecipeStep(step: RecipeStep) {
         recipeSteps.append(step)
     }
 }
 
-class recipeStep {
+class RecipeStep {
     var title: String
     var imageTitle: String
     @State var imageData: Data? = nil

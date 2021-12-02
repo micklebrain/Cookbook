@@ -36,9 +36,16 @@ enum Spices: String {
 
 enum Vegetables: String {
     case bokChoy = "bok choy"
+    case cilantro = "cilantro"
     case garlic = "garlic"
     case ginger = "ginger"
+    case greenOnion = "green onion"
     case lemon = "lemon"
+    case mushrooms = "mushrooms"
+    case onion = "onion"
+    case springOnion = "spring onion"
+    case tomatoSauce = "tomato sauce"
+    case tomatoPuree = "tomato puree"
 }
 
 enum ingredientType: String {

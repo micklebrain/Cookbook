@@ -25,7 +25,7 @@ struct RecipePageView: View {
                     }
                 }) {
                     HomeButtonContent()
-                }
+                }.buttonStyle(.plain)
                 Text(title).padding()
                 Text("Produce 🥩").padding()
                 Text(recipe.ingredients.joined(separator: ", ")).padding()
@@ -121,10 +121,7 @@ struct RecipePageView: View {
 struct HomeButtonContent : View {
     var body: some View {
         Text("TABLE OF CONTENTS")
-            .foregroundColor(.white)
             .frame(width: 200, height: 50)
-            .background(Color.blue)
-            .cornerRadius(15)
             .padding(.top, 50)
     }
 }
