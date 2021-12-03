@@ -8,7 +8,6 @@
 import Foundation
 
 class Ingredient {
-    
     var name: String
     var quantity: Int
     var type: String
@@ -20,6 +19,12 @@ class Ingredient {
         self.quantity = quantity
         self.unitOfMeasurement = unitOfMeasurement
     }
+}
+
+enum Produce: String {
+    case beef = "beef"
+    case chickenBreasts = "chicken breasts"
+    case pork = "pork"
 }
 
 enum Spices: String {

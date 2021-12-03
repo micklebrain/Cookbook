@@ -9,27 +9,25 @@ import Foundation
 import SwiftUI
 
 class Recipe {
-    var name: String
-    var ingredients: [String]
-    var preparation_steps = [""]
-    var recipeSteps: [RecipeStep]
-    var spices: [String]
-    var vegetables: [String]
-    var cuisine = ""
     var coverImage: String
+    var produceAndDairy: [String]
+    var name: String
+    var recipeSteps: [RecipeStep]
+    var spicesAndHerbs: [String]
+    var vegetables: [String]
     
-    init(name: String,
-         ingredients: [String],
+    init(coverImage: String,
+         produceAndDairy: [String],
+         name: String,
          recipeSteps: [RecipeStep],
          spices: [String] = [""],
-         vegetables: [String] = [""],
-         coverImage: String) {
-        self.name = name
-        self.ingredients = ingredients
-        self.recipeSteps = recipeSteps
-        self.spices = spices
-        self.vegetables = vegetables
+         vegetables: [String] = [""]) {
         self.coverImage = coverImage
+        self.name = name
+        self.produceAndDairy = produceAndDairy
+        self.recipeSteps = recipeSteps
+        self.spicesAndHerbs = spices
+        self.vegetables = vegetables
     }
     
     func addRecipeStep(step: RecipeStep) {

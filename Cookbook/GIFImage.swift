@@ -33,7 +33,7 @@ public struct GIFImage: UIViewRepresentable {
     public func updateUIView(_ uiView: UIGIFImage, context: Context) {
         if let data = data {
             uiView.updateGIF(data: data)
-        } else {            
+        } else {
             uiView.updateGIF(name: name ?? "")
         }
     }
@@ -149,12 +149,12 @@ private func delayForImage(at index: Int, source: CGImageSource) -> Double {
     }
     let gifProperties = unsafeBitCast(gifPropertiesPointer.pointee, to: CFDictionary.self)
     var delayWrapper = unsafeBitCast(CFDictionaryGetValue(gifProperties,
-                                                         Unmanaged.passUnretained(kCGImagePropertyGIFUnclampedDelayTime).toOpaque()),
-                                    to: AnyObject.self)
+                                                          Unmanaged.passUnretained(kCGImagePropertyGIFUnclampedDelayTime).toOpaque()),
+                                     to: AnyObject.self)
     if delayWrapper.doubleValue == 0 {
         delayWrapper = unsafeBitCast(CFDictionaryGetValue(gifProperties,
-                                                         Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()),
-                                    to: AnyObject.self)
+                                                          Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()),
+                                     to: AnyObject.self)
     }
     
     if let delay = delayWrapper as? Double,

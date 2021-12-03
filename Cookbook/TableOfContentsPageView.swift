@@ -32,7 +32,7 @@ struct TableOfContentsPageView: View {
                     }, label: {
                         Label(recipe.name, systemImage: "").labelStyle(.titleOnly)
                     }).padding()
-                      .buttonStyle(.plain)                    
+                        .buttonStyle(.plain)
                     Image(recipe.coverImage)
                         .resizable()
                         .scaledToFit()
@@ -40,5 +40,4 @@ struct TableOfContentsPageView: View {
             }
         }
     }
-    
 }

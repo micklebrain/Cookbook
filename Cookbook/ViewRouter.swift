@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 class ViewRouter: ObservableObject {
-    
     @Published var homePage : Bool = true
     @Published var currentPage: RecipePageView
     
@@ -18,27 +17,11 @@ class ViewRouter: ObservableObject {
     
     init() {
         self.currentPage = RecipePageView(title: "All Recipes",
-                                          recipe: Recipe(name: "Test",
-                                                         ingredients: [],
-                                                         recipeSteps: [],
-                                                         coverImage: ""),
+                                          recipe: Recipe(coverImage: "",
+                                                         produceAndDairy: [],
+                                                         name: "Test",
+                                                         recipeSteps: []),
                                           recipeImages: [:])
         self.homePageView = TableOfContentsPageView()
     }
-    
-    //    func nextRecipe() -> RecipePageView {
-    //        if (currentRecipePage >= cookBook.recipes.count-1) {
-    //            homePage = true
-    //            currentRecipePage = 0
-    //        } else {
-    //            currentRecipePage += 1
-    //        }
-    //
-    //        let recipePV = RecipePageView(title: cookBook.recipes[currentRecipePage].name,
-    //                                      recipe: cookBook.recipes[currentRecipePage])
-    //
-    //        homePage = false
-    //        return recipePV
-    //    }
-    
 }

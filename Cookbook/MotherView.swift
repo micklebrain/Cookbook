@@ -10,12 +10,11 @@ import Foundation
 import SwiftUI
 
 struct MotherView: View {
-    
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var cookbook: Cookbook
     
     var currentRecipePage = 0
-        
+    
     var body: some View {
         if viewRouter.homePage{
             viewRouter.homePageView
@@ -23,5 +22,4 @@ struct MotherView: View {
             viewRouter.currentPage
         }
     }
-    
 }

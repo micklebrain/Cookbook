@@ -24,13 +24,14 @@ struct RecipePageView: View {
                         viewRouter.homePage = true
                     }
                 }) {
-                    HomeButtonContent()
+                    TableOfContentsButtonContent()
                 }.buttonStyle(.plain)
                 Text(title).padding()
-                Text("Produce 🥩").padding()
-                Text(recipe.ingredients.joined(separator: ", ")).padding()
-                Text("Spices 🌶 and Herbs 🌿").padding()
-                Text(recipe.spices.joined(separator: ", ")).padding()
+                Text("Ingredients").padding()
+                Text("Produce 🥩 & Dairy 🐮").padding()
+                Text(recipe.produceAndDairy.joined(separator: ", ")).padding()
+                Text("Spices 🌶 & Herbs 🌿").padding()
+                Text(recipe.spicesAndHerbs.joined(separator: ", ")).padding()
                 Text("Vegetables 🍅")
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
                 
@@ -52,16 +53,21 @@ struct RecipePageView: View {
                         GIFImage(data: data).frame(height: 300)
                     } else {
                         let imageTitle = recipe.recipeSteps[$0].imageTitle
-                        Text("Loading...").onAppear(perform: {
-                            loadData(key: imageTitle)
-                        })
+                        Image(recipe.coverImage)
+                            .resizable()
+                            .scaledToFit().onAppear(perform: {
+                                loadData(folder: recipe.coverImage, key: imageTitle)
+                            })                        
+//                        Text("Loading...").onAppear(perform: {
+//                            loadData(key: imageTitle)
+//                        })
                     }
                 }
             }
         }
     }
     
-    private func loadData(key: String) {
+    private func loadData(folder: String, key: String) {
         let credentialsProvider = AWSCognitoCredentialsProvider(
             regionType: .USEast2,
             identityPoolId: "us-east-2:8a0f9f0f-8a34-485e-8f41-502e973610b3")
@@ -69,7 +75,7 @@ struct RecipePageView: View {
         let configuration = AWSServiceConfiguration(
             region: .USEast2,
             credentialsProvider: credentialsProvider)
-        //Setup the transfer utility configuration
+
         let tuConf = AWSS3TransferUtilityConfiguration()
         tuConf.isAccelerateModeEnabled = false
         
@@ -89,8 +95,8 @@ struct RecipePageView: View {
         
         let expression = AWSS3TransferUtilityDownloadExpression()
         expression.progressBlock = {(task, progress) in DispatchQueue.main.async(execute: {
-            // print("Got here")
-            })
+            // Print()
+        })
         }
         
         var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
@@ -103,7 +109,7 @@ struct RecipePageView: View {
         let transferUtility = AWSS3TransferUtility.default()
         transferUtility.downloadData(
             fromBucket: "cookbooka331c28aa140415d930c26412d0f0d99155946-dev",
-            key: key + ".gif",
+            key: folder + "/" + key + ".gif",
             expression: expression,
             completionHandler: completionHandler
         ).continueWith {
@@ -118,7 +124,7 @@ struct RecipePageView: View {
     }
 }
 
-struct HomeButtonContent : View {
+struct TableOfContentsButtonContent : View {
     var body: some View {
         Text("TABLE OF CONTENTS")
             .frame(width: 200, height: 50)
