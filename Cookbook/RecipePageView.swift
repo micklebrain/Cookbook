@@ -49,18 +49,16 @@ struct RecipePageView: View {
                 // Async load images
                 ForEach((0...recipe.recipeSteps.count-1), id: \.self) {
                     Text("\($0+1). \(recipe.recipeSteps[$0].title)")
-                    if let data = recipeImages[recipe.recipeSteps[$0].imageTitle] {
+                    let imageTitle = recipe.coverImage + "-step-\($0+1)"
+                    if let data = recipeImages[imageTitle] {
                         GIFImage(data: data).frame(height: 300)
-                    } else {
-                        let imageTitle = recipe.recipeSteps[$0].imageTitle
-                        Image(recipe.coverImage)
+                    } else {                        
+                        let staticImageName = recipe.coverImage + "-static-step-\($0+1)"
+                        Image(staticImageName)
                             .resizable()
                             .scaledToFit().onAppear(perform: {
                                 loadData(folder: recipe.coverImage, key: imageTitle)
-                            })                        
-//                        Text("Loading...").onAppear(perform: {
-//                            loadData(key: imageTitle)
-//                        })
+                            })
                     }
                 }
             }
