@@ -16,6 +16,9 @@ struct RecipePageView: View {
     @State var recipeImages: [String: Data] = [:]
     @EnvironmentObject var viewRouter: ViewRouter
     
+//    var idenityPoolId = ProcessInfo.processInfo.environment["identityPoolId"]!
+    var idenityPoolId = Bundle.main.object(forInfoDictionaryKey: "IdentityPoolId") as? String
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -26,13 +29,16 @@ struct RecipePageView: View {
                 }) {
                     TableOfContentsButtonContent()
                 }.buttonStyle(.plain)
-                Text(title).padding()
-                Text("Ingredients").padding()
-                Text("Produce 🥩 & Dairy 🐮").padding()
+                Text(title).font(.largeTitle).padding()
+                Text("Ingredients").font(.title).padding()
+                
+                Text("Produce 🥩 & Dairy 🐮").fontWeight(.bold).padding()
                 Text(recipe.produceAndDairy.joined(separator: ", ")).padding()
-                Text("Spices 🌶 & Herbs 🌿").padding()
+                
+                Text("Spices 🌶 & Herbs 🌿").fontWeight(.bold).padding()
                 Text(recipe.spicesAndHerbs.joined(separator: ", ")).padding()
-                Text("Vegetables 🍅")
+                
+                Text("Vegetables 🍅").fontWeight(.bold).padding()
                 Text(recipe.vegetables.joined(separator: ", ")).padding()
                 
                 // Synchronous load images from device
@@ -68,7 +74,7 @@ struct RecipePageView: View {
     private func loadData(folder: String, key: String) {
         let credentialsProvider = AWSCognitoCredentialsProvider(
             regionType: .USEast2,
-            identityPoolId: "us-east-2:8a0f9f0f-8a34-485e-8f41-502e973610b3")
+            identityPoolId: idenityPoolId!)
         
         let configuration = AWSServiceConfiguration(
             region: .USEast2,
@@ -124,8 +130,7 @@ struct RecipePageView: View {
 
 struct TableOfContentsButtonContent : View {
     var body: some View {
-        Text("TABLE OF CONTENTS")
-            .frame(width: 200, height: 50)
-            .padding(.top, 50)
+        Label("TABLE OF CONTENTS", systemImage: "book.fill").labelStyle(IconOnlyLabelStyle()).font(.largeTitle)
     }
 }
+

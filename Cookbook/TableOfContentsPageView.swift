@@ -14,11 +14,11 @@ struct TableOfContentsPageView: View {
     
     @EnvironmentObject var cookbook: Cookbook
     @EnvironmentObject var viewRouter: ViewRouter
-    
+        
     var body: some View {
         ScrollView {
             VStack {
-                Label("Table of Contents", systemImage: "").labelStyle(.titleOnly)
+                Text("Table of Contents").font(.largeTitle)
                 var count = 0
                 ForEach(cookbook.recipes, id: \.name) { recipe in
                     Button(action: {
@@ -30,7 +30,7 @@ struct TableOfContentsPageView: View {
                             viewRouter.homePage = false
                         }
                     }, label: {
-                        Label(recipe.name, systemImage: "").labelStyle(.titleOnly)
+                        Text(recipe.name).font(.title)
                     }).padding()
                         .buttonStyle(.plain)
                     Image(recipe.coverImage)
