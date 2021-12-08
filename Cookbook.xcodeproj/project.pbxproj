@@ -1261,7 +1261,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cookbook/Cookbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookbook/Preview Content\"";
-				DEVELOPMENT_TEAM = NV5PR33GEL;
+				DEVELOPMENT_TEAM = DP8WZRYLZG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Cookbook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1285,7 +1285,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cookbook/Cookbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookbook/Preview Content\"";
-				DEVELOPMENT_TEAM = NV5PR33GEL;
+				DEVELOPMENT_TEAM = DP8WZRYLZG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Cookbook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
