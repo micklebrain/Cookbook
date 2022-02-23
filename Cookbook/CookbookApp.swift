@@ -14,10 +14,12 @@ struct CookbookApp: App {
     
     @StateObject var cookbook = Cookbook(recipes: [
         Recipe(coverImage: "butter-chicken",
-               produceAndDairy: ["2 lbs of chicken breasts",
-                                 "1 cup of cream",
-                                 "6 tbsp of butter",
-                                 "125 grams of yogurt"],
+               produceAndDairy: [
+                Ingredient(name: "chicken breasts", quantity: 2, unitOfMeasurement: "lbs"),
+                Ingredient(name: "cream", quantity: 1, unitOfMeasurement: "cup"),
+                Ingredient(name: "butter", quantity: 6, unitOfMeasurement: "tablespoon"),
+                Ingredient(name: "yogurt", quantity: 125, unitOfMeasurement: "grams")
+               ],
                name: "Butter Chicken (Chicken Tikka Masala)",
                recipeSteps: [
                 RecipeStep(title: "Chop chicken breasts and add to bowl ."),
@@ -48,62 +50,71 @@ struct CookbookApp: App {
                 RecipeStep(title: "Stir in 250 ml of cream."),
                 RecipeStep(title: "Stir in chicken.")],
                
-               spices: ["1 teaspoon of " + Spices.cayennePepper.rawValue,
-                        "2 teaspoons of " + Spices.chiliPowder.rawValue,
-                        "2 teaspoons of " + Spices.coriander.rawValue,
-                        "2 teaspoons of " + Spices.cumin.rawValue,
-                        "3 teaspoon of " + Spices.garamMasala.rawValue,
-                        "2 teaspoons of " + Spices.paprika.rawValue,
-                        Spices.pepper.rawValue,
-                        Spices.salt.rawValue,
-                        "1/2 teaspoon of " + Spices.tumeric.rawValue],
-               
-               vegetables: [Vegetables.cilantro.rawValue,
-                            "3 " + Vegetables.garlic.rawValue + " cloves minced",
-                            "1 tablespoon of grated " + Vegetables.ginger.rawValue,
-                            "1 " + Vegetables.lemon.rawValue,
-                            "14 oz of " + Vegetables.tomatoSauce.rawValue,
-                            "1 tablespoon " + Vegetables.tomatoPuree.rawValue,
-                            "1 1/2 cups of yellow " + Vegetables.onion.rawValue + " diced"]),
-        
-        Recipe(coverImage: "soft-tofu-soup",
-               produceAndDairy: ["broth (optional)",
-                                 "egg",
-                                 "25 grams of ground pork",
-                                 "15 grams of minced garlic",
-                                 "seasame oil",
-                                 "shrimp",
-                                 "1 tube of soft tofu",
-                                 "soy sauce",
-                                 "vegetable oil"],
-               name: "Spicy Soft Tofu Stew (Sundubu Jjigae)",
-               recipeSteps: [
-                RecipeStep(title: "Add vegetable oil to the pan."),
-                RecipeStep(title: "Add seasame oil to the pan."),
-                RecipeStep(title: "Stir fry 25 grams of  green onions."),
-                RecipeStep(title: "Add 25 grams of ground pork to the pan."),
-                RecipeStep(title: "Add 1/2 chopped white onion to the pan."),
-                RecipeStep(title: "Add 15 grams of minced garlic to the pan."),
-                RecipeStep(title: "Add salt to the pan."),
-                RecipeStep(title: "Add 10 grams red chili powder the pan."),
-                RecipeStep(title: "Add 10 grams of sugar to the pan."),
-                RecipeStep(title: "Add 10 grams of soy sauce to the pan."),
-                RecipeStep(title: "Add 120 grams of broth or water into earthen pot."),
-                RecipeStep(title: "Add 180 grams of paste into earthen pot."),
-                RecipeStep(title: "Add soft tofu into earthen pot."),
-                RecipeStep(title: "Crack egg into earthen pot."),
-                RecipeStep(title: "Add black pepper into earthen pot."),
-                RecipeStep(title: "Sprinkle 8 grams of cheongyang pepper into earthen pot."),
-                RecipeStep(title: "Sprinkle chopped scallion into earthen pot.")
+               spices: [
+                Ingredient(name: Spices.cayennePepper.rawValue, quantity: 1, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.chiliPowder.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.coriander.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.cumin.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.garamMasala.rawValue, quantity: 3, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.paprika.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.pepper.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.salt.rawValue, quantity: 2, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.tumeric.rawValue, quantity: 0.5, unitOfMeasurement: "teaspoon")
                ],
-               spices: ["10 grams of red chili flakes",
-                        "8 grams of cheongyang pepper"],
-               vegetables: ["25 grams of " + Vegetables.greenOnion.rawValue,
-                            "scallions",
-                            "1 white onion"]),
+               
+               vegetables: [
+                Ingredient(name: Vegetables.cilantro.rawValue, quantity: 1, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Vegetables.garlic.rawValue, quantity: 3, unitOfMeasurement: "minced cloves"),
+                Ingredient(name: Vegetables.ginger.rawValue, quantity: 1, unitOfMeasurement: "tablespoon"),
+                Ingredient(name: Vegetables.lemon.rawValue, quantity: 1, unitOfMeasurement: "tablespoon"),
+                Ingredient(name: Vegetables.tomatoSauce.rawValue, quantity: 14, unitOfMeasurement: "oz"),
+                Ingredient(name: Vegetables.tomatoPuree.rawValue, quantity: 1, unitOfMeasurement: "tablespoon"),
+                Ingredient(name: "yellow " + Vegetables.onion.rawValue, quantity: 1.5, unitOfMeasurement: "diced"),
+                
+               ]),
+        
+        Recipe(coverImage: "chicken-fettuccine-alfredo",
+               produceAndDairy: [
+                Ingredient(name: "Chicken", quantity: 1, unitOfMeasurement: "lb"),
+                Ingredient(name: "fettuccine pasta", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "cheese", quantity: 0, unitOfMeasurement: ""),
+               ],
+               name: "Chicken Fettuccine Alfredo",
+               recipeSteps: [
+                RecipeStep(title: "Cook fettuccine pasta in salted water"),
+                RecipeStep(title: "Slice one pound of mushrooms"),
+                RecipeStep(title: "Finely chop onion"),
+                RecipeStep(title: "Mince three large garlic cloves"),
+                RecipeStep(title: "Slice two pounds of chicken breasts into strips"),
+                RecipeStep(title: "Season chicken with salt"),
+                RecipeStep(title: "Season chicken with black pepper"),
+                RecipeStep(title: "Add 2 tablespoons of oil in pan"),
+                RecipeStep(title: "Sautee chicken"),
+                RecipeStep(title: "Add tablespoon of oil"),
+                RecipeStep(title: "Add tablespoon of butter"),
+                RecipeStep(title: "Sautee onions until soft"),
+                RecipeStep(title: "Sautee sliced mushrooms until lightly brown"),
+                RecipeStep(title: "Add minced garlic"),
+                RecipeStep(title: "Add three and half cups of half and half"),
+                RecipeStep(title: "Add chicken to pan"),
+                RecipeStep(title: "Add quarter cup of parsley"),
+                RecipeStep(title: "Add sea salt"),
+                RecipeStep(title: "Add black pepper"),
+                RecipeStep(title: "Add cooked and drain pasta to pan and stir"),
+               ],
+               spices: [
+                Ingredient(name: Spices.pepper.rawValue, quantity: 0, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.salt.rawValue, quantity: 0, unitOfMeasurement: "teaspoon")
+               ],
+               vegetables: [Ingredient(name: Vegetables.garlic.rawValue, quantity: 0, unitOfMeasurement: "cloves")]),
         
         Recipe(coverImage: "chicken-potatoes",
-               produceAndDairy: ["cheese", "chicken", "eggs", "heavy cream"],
+               produceAndDairy: [
+                Ingredient(name: "cheese", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "chicken", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "eggs", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "heavy cream", quantity: 0, unitOfMeasurement: ""),
+               ],
                name: "Chicken and potatoes",
                recipeSteps: [
                 RecipeStep(title: "Slice 1 onion."),
@@ -134,38 +145,26 @@ struct CookbookApp: App {
                 RecipeStep(title: "Bake for another 10 mins."),
                 RecipeStep(title: "Garnish and enjoy")
                ],
-               spices: ["black pepper", "curry", "red peper", "salt"],
-               vegetables: ["onions", "potatoes", "tomatoes"]),
-        
-        Recipe(coverImage: "ram-don",
-               produceAndDairy: ["beef",
-                                 "Chapaghetti instant ramen",
-                                 "Neoguri instant ramen"],
-               name: "Ram-Don",
-               recipeSteps: [
-                RecipeStep(title: "Slice beef into cubes."),
-                RecipeStep(title: "Season beef with salt."),
-                RecipeStep(title: "Add water to pot."),
-                RecipeStep(title: "Add packets of flakes."),
-                RecipeStep(title: "Add noodles and stir until loosen."),
-                RecipeStep(title: "Heat pan and add oil."),
-                RecipeStep(title: "Add meat and cook."),
-                RecipeStep(title: "Add noodles to pan."),
-                RecipeStep(title: "Add soup base Chapaghetti packet."),
-                RecipeStep(title: "Add soup base Neoguri packet."),
-                RecipeStep(title: "Stir and add water if dry if it dosn't mix well."),
-                RecipeStep(title: "Add oil packet."),
-                RecipeStep(title: "Enjoy!")
+               spices: [
+                Ingredient(name: "curry", quantity: 0, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: "red pepper", quantity: 0, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.pepper.rawValue, quantity: 0, unitOfMeasurement: "teaspoon"),
+                Ingredient(name: Spices.salt.rawValue, quantity: 0, unitOfMeasurement: "teaspoon")
                ],
-               spices: ["None"],
-               vegetables: ["None"]),
+               vegetables: [
+                Ingredient(name: "onions", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "potatoes", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "tomatoes", quantity: 0, unitOfMeasurement: "")
+               ]),
         
         Recipe(coverImage: "elota",
-               produceAndDairy: ["butter",
-                                 "corn",
-                                 "cotija cheese",
-                                 "mayonnaise",
-                                 "sour cream"],
+               produceAndDairy: [
+                Ingredient(name: "butter", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "corn", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "cotija cheese", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "mayonnaise", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "sour cream", quantity: 0, unitOfMeasurement: "")
+               ],
                name: "Elota",
                recipeSteps: [
                 RecipeStep(title: "Butter corn."),
@@ -188,15 +187,100 @@ struct CookbookApp: App {
                 RecipeStep(title: "Sprinkle Tajin on corn."),
                 RecipeStep(title: "Garnish with cilantro and enjoy."),
                ],
-               spices: [Spices.salt.rawValue,
-                        Spices.pepper.rawValue,
-                        "onion powder",
-                        "garlic powder",
-                        "sugar",
-                        "tajin"],
-               vegetables: ["cilantro",
-                            "garlic",
-                            "lime"])
+               spices: [
+                Ingredient(name: Spices.pepper.rawValue, quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: Spices.salt.rawValue, quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "onion powder", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "garlic powder", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "sugar", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "tajin", quantity: 0, unitOfMeasurement: "")
+               ],
+               vegetables: [
+                Ingredient(name: "cilantro", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "garlic", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "lime", quantity: 0, unitOfMeasurement: "")
+               ]),
+        
+        Recipe(coverImage: "ram-don",
+               produceAndDairy: [
+                Ingredient(name: "beef", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "Chapaghetti instant ramen", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "Neoguri instant ramen", quantity: 0, unitOfMeasurement: "")
+               ],
+               name: "Ram-Don",
+               recipeSteps: [
+                RecipeStep(title: "Slice beef into cubes."),
+                RecipeStep(title: "Season beef with salt."),
+                RecipeStep(title: "Add water to pot."),
+                RecipeStep(title: "Add packets of flakes."),
+                RecipeStep(title: "Add noodles and stir until loosen."),
+                RecipeStep(title: "Heat pan and add oil."),
+                RecipeStep(title: "Add meat and cook."),
+                RecipeStep(title: "Add noodles to pan."),
+                RecipeStep(title: "Add soup base Chapaghetti packet."),
+                RecipeStep(title: "Add soup base Neoguri packet."),
+                RecipeStep(title: "Stir and add water if dry and if it dosn't mix well."),
+                RecipeStep(title: "Add oil packet."),
+                RecipeStep(title: "Enjoy!")
+               ],
+               spices: [],
+               vegetables: []),
+        
+        Recipe(coverImage: "soft-tofu-soup",
+               produceAndDairy: [
+                Ingredient(name: "broth", quantity: 1, unitOfMeasurement: ""),
+                Ingredient(name: "egg", quantity: 1, unitOfMeasurement: ""),
+                Ingredient(name: "ground pork", quantity: 25, unitOfMeasurement: "grams"),
+                Ingredient(name: "minced garlic", quantity: 15, unitOfMeasurement: "grams"),
+                Ingredient(name: "seasame oil", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "shrimp", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "soft tofu", quantity: 1, unitOfMeasurement: "tube"),
+                Ingredient(name: "soy sauce", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "vegetable oil", quantity: 0, unitOfMeasurement: "")
+               ],
+               name: "Spicy Soft Tofu Stew (Sundubu Jjigae)",
+               recipeSteps: [
+                RecipeStep(title: "Add vegetable oil to the pan."),
+                RecipeStep(title: "Add seasame oil to the pan."),
+                RecipeStep(title: "Stir fry 25 grams of  green onions."),
+                RecipeStep(title: "Add 25 grams of ground pork to the pan."),
+                RecipeStep(title: "Add 1/2 chopped white onion to the pan."),
+                RecipeStep(title: "Add 15 grams of minced garlic to the pan."),
+                RecipeStep(title: "Add salt to the pan."),
+                RecipeStep(title: "Add 10 grams red chili powder the pan."),
+                RecipeStep(title: "Add 10 grams of sugar to the pan."),
+                RecipeStep(title: "Add 10 grams of soy sauce to the pan."),
+                RecipeStep(title: "Add 120 grams of broth or water into earthen pot."),
+                RecipeStep(title: "Add 180 grams of paste into earthen pot."),
+                RecipeStep(title: "Add soft tofu into earthen pot."),
+                RecipeStep(title: "Crack egg into earthen pot."),
+                RecipeStep(title: "Add black pepper into earthen pot."),
+                RecipeStep(title: "Sprinkle 8 grams of cheongyang pepper into earthen pot."),
+                RecipeStep(title: "Sprinkle chopped scallion into earthen pot.")
+               ],
+               spices: [
+                Ingredient(name: "red chili flakes", quantity: 10, unitOfMeasurement: "grams"),
+                Ingredient(name: "cheongyang pepper", quantity: 8, unitOfMeasurement: "grams")
+               ],
+               vegetables: [
+                Ingredient(name: Vegetables.greenOnion.rawValue, quantity: 25, unitOfMeasurement: "grams"),
+                Ingredient(name: "scallions", quantity: 0, unitOfMeasurement: ""),
+                Ingredient(name: "white onion", quantity: 1, unitOfMeasurement: "grams")
+               ]),
+        
+        Recipe(coverImage: "spaghetti-and-meatballs",
+               produceAndDairy: [],
+               name: "Spaghetti and meatballs",
+               recipeSteps: [
+                RecipeStep(title: "Chop bread into cubes"),
+                RecipeStep(title: "Add bread pieces to bowl than add water"),
+                RecipeStep(title: "Mixup bread and water"),
+                RecipeStep(title: "Add in minced beef"),
+                RecipeStep(title: "Add in minced pork"),
+                RecipeStep(title: "Crack in one egg")
+               ],
+               spices: [],
+               vegetables: [])
     ])
     
     @StateObject var viewRouter = ViewRouter()

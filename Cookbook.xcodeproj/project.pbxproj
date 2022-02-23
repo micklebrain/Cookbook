@@ -16,6 +16,8 @@
 		0A79E3882721D88300F36D00 /* soft-tofu-soup-step-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A79E3872721D88300F36D00 /* soft-tofu-soup-step-10.gif */; };
 		0A93FE0827223E10002994E5 /* TableOfContentsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FE0727223E10002994E5 /* TableOfContentsPageView.swift */; };
 		2A0DB2B1270D3C99000F9E88 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DB2B0270D3C99000F9E88 /* Ingredient.swift */; };
+		2A0DE83527825045005367C1 /* sphaghetti-and-meatballs-step-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DE83327825045005367C1 /* sphaghetti-and-meatballs-step-2.gif */; };
+		2A0DE83627825045005367C1 /* sphaghetti-and-meatballs-step-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DE83427825045005367C1 /* sphaghetti-and-meatballs-step-1.gif */; };
 		2A18A3D22731B32100D47866 /* butter-chicken-step-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A18A3D12731B32100D47866 /* butter-chicken-step-1.gif */; };
 		2A18A3D42731B42300D47866 /* butter-chicken-step-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A18A3D32731B42300D47866 /* butter-chicken-step-2.gif */; };
 		2A18A3D62731B50600D47866 /* butter-chicken-step-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A18A3D52731B50500D47866 /* butter-chicken-step-3.gif */; };
@@ -48,6 +50,7 @@
 		2A26CDFB26B9DF6900A1B876 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A26CDFA26B9DF6900A1B876 /* Preview Assets.xcassets */; };
 		2A26CE0626B9DF6900A1B876 /* CookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CE0526B9DF6900A1B876 /* CookbookTests.swift */; };
 		2A26CE1126B9DF6900A1B876 /* CookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CE1026B9DF6900A1B876 /* CookbookUITests.swift */; };
+		2A37FFCD278E662400F66F69 /* RecipeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37FFCC278E662300F66F69 /* RecipeStepView.swift */; };
 		2A4F6B1827509268004BB1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F6B1727509268004BB1BB /* AppDelegate.swift */; };
 		2A55C43726C03FD6005851CD /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55C43626C03FD6005851CD /* Recipe.swift */; };
 		2A64FDF526D8979F008E4806 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A64FDF426D8979F008E4806 /* MotherView.swift */; };
@@ -159,8 +162,32 @@
 		2ABED3E62743799D00334F6F /* elota-step-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D52743799D00334F6F /* elota-step-2.gif */; };
 		2ABED3E72743799D00334F6F /* elota-step-18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3D62743799D00334F6F /* elota-step-18.gif */; };
 		2ABED3E927443B8300334F6F /* butter-chicken-step-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */; };
+		2AC498A0277BA0A10029B490 /* chicken-fettuccine-alfredo-step-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989A277BA0A00029B490 /* chicken-fettuccine-alfredo-step-1.gif */; };
+		2AC498A1277BA0A10029B490 /* chicken-fettuccine-alfredo-step-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989B277BA0A00029B490 /* chicken-fettuccine-alfredo-step-5.gif */; };
+		2AC498A2277BA0A10029B490 /* chicken-fettuccine-alfredo-step-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989C277BA0A00029B490 /* chicken-fettuccine-alfredo-step-6.gif */; };
+		2AC498A3277BA0A10029B490 /* chicken-fettuccine-alfredo-step_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989D277BA0A00029B490 /* chicken-fettuccine-alfredo-step_2.gif */; };
+		2AC498A4277BA0A10029B490 /* chicken-fettuccine-alfredo-step_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989E277BA0A10029B490 /* chicken-fettuccine-alfredo-step_3.gif */; };
+		2AC498A5277BA0A10029B490 /* chicken-fettuccine-alfredo-step_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4989F277BA0A10029B490 /* chicken-fettuccine-alfredo-step_4.gif */; };
+		2AC498B5277BA95D0029B490 /* chicken-fettuccine-alfredo-step-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498A7277BA95B0029B490 /* chicken-fettuccine-alfredo-step-11.gif */; };
+		2AC498B6277BA95D0029B490 /* chicken-fettuccine-alfredo-step_17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498A8277BA95B0029B490 /* chicken-fettuccine-alfredo-step_17.gif */; };
+		2AC498B7277BA95D0029B490 /* chicken-fettuccine-alfredo-step-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498A9277BA95B0029B490 /* chicken-fettuccine-alfredo-step-12.gif */; };
+		2AC498B8277BA95D0029B490 /* chicken-fettuccine-alfredo-step-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AA277BA95C0029B490 /* chicken-fettuccine-alfredo-step-9.gif */; };
+		2AC498B9277BA95D0029B490 /* chicken-fettuccine-alfredo-step_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AB277BA95C0029B490 /* chicken-fettuccine-alfredo-step_7.gif */; };
+		2AC498BA277BA95D0029B490 /* chicken-fettuccine-alfredo-step-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AC277BA95C0029B490 /* chicken-fettuccine-alfredo-step-13.gif */; };
+		2AC498BB277BA95D0029B490 /* chicken-fettuccine-alfredo-step-20.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AD277BA95C0029B490 /* chicken-fettuccine-alfredo-step-20.gif */; };
+		2AC498BC277BA95D0029B490 /* chicken-fettuccine-alfredo-step-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AE277BA95C0029B490 /* chicken-fettuccine-alfredo-step-15.gif */; };
+		2AC498BD277BA95D0029B490 /* chicken-fettuccine-alfredo-step-19.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498AF277BA95D0029B490 /* chicken-fettuccine-alfredo-step-19.gif */; };
+		2AC498BE277BA95D0029B490 /* chicken-fettuccine-alfredo-step-18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498B0277BA95D0029B490 /* chicken-fettuccine-alfredo-step-18.gif */; };
+		2AC498BF277BA95D0029B490 /* chicken-fettuccine-alfredo-step-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498B1277BA95D0029B490 /* chicken-fettuccine-alfredo-step-16.gif */; };
+		2AC498C0277BA95D0029B490 /* chicken-fettuccine-alfredo-step-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498B2277BA95D0029B490 /* chicken-fettuccine-alfredo-step-8.gif */; };
+		2AC498C1277BA95D0029B490 /* chicken-fettuccine-alfredo-step-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498B3277BA95D0029B490 /* chicken-fettuccine-alfredo-step-10.gif */; };
+		2AC498C2277BA95D0029B490 /* chicken-fettuccine-alfredo-step-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AC498B4277BA95D0029B490 /* chicken-fettuccine-alfredo-step-14.gif */; };
 		2ACE435E2745A69F0057C0D0 /* elota-step-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE435B2745A69F0057C0D0 /* elota-step-8.gif */; };
 		2ACE435F2745A69F0057C0D0 /* elota-step-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE435C2745A69F0057C0D0 /* elota-step-10.gif */; };
+		2ADD07482783B0590063F55B /* sphaghetti-and-meatballs-step-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD07442783B0590063F55B /* sphaghetti-and-meatballs-step-5.gif */; };
+		2ADD07492783B0590063F55B /* sphaghetti-and-meatballs-step-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD07452783B0590063F55B /* sphaghetti-and-meatballs-step-6.gif */; };
+		2ADD074A2783B0590063F55B /* sphaghetti-and-meatballs-step-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD07462783B0590063F55B /* sphaghetti-and-meatballs-step-3.gif */; };
+		2ADD074B2783B0590063F55B /* sphaghetti-and-meatballs-step-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD07472783B0590063F55B /* sphaghetti-and-meatballs-step-4.gif */; };
 		6DE3B9EEA23E79EDFA9E00D5 /* Pods_CookbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110B6DF27D182BC134E821C8 /* Pods_CookbookTests.framework */; };
 		6FC86B5D3DE1C4DE740B921B /* Pods_Cookbook_CookbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4015854940688A1D85C412 /* Pods_Cookbook_CookbookUITests.framework */; };
 		851D8255F0B7E667CC03B1DA /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 73DA53E27148E2FB50E564F4 /* amplifyconfiguration.json */; };
@@ -197,6 +224,8 @@
 		0A93FE0727223E10002994E5 /* TableOfContentsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfContentsPageView.swift; sourceTree = "<group>"; };
 		110B6DF27D182BC134E821C8 /* Pods_CookbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0DB2B0270D3C99000F9E88 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		2A0DE83327825045005367C1 /* sphaghetti-and-meatballs-step-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-2.gif"; sourceTree = "<group>"; };
+		2A0DE83427825045005367C1 /* sphaghetti-and-meatballs-step-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-1.gif"; sourceTree = "<group>"; };
 		2A18A3D12731B32100D47866 /* butter-chicken-step-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-1.gif"; sourceTree = "<group>"; };
 		2A18A3D32731B42300D47866 /* butter-chicken-step-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-2.gif"; sourceTree = "<group>"; };
 		2A18A3D52731B50500D47866 /* butter-chicken-step-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-3.gif"; sourceTree = "<group>"; };
@@ -235,6 +264,7 @@
 		2A26CE0C26B9DF6900A1B876 /* CookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A26CE1026B9DF6900A1B876 /* CookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookUITests.swift; sourceTree = "<group>"; };
 		2A26CE1226B9DF6900A1B876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A37FFCC278E662300F66F69 /* RecipeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepView.swift; sourceTree = "<group>"; };
 		2A4F6B1727509268004BB1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A55C43526C02B23005851CD /* Cookbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cookbook.entitlements; sourceTree = "<group>"; };
 		2A55C43626C03FD6005851CD /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -347,8 +377,32 @@
 		2ABED3D52743799D00334F6F /* elota-step-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-step-2.gif"; sourceTree = "<group>"; };
 		2ABED3D62743799D00334F6F /* elota-step-18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-step-18.gif"; sourceTree = "<group>"; };
 		2ABED3E827443B8300334F6F /* butter-chicken-step-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "butter-chicken-step-6.gif"; sourceTree = "<group>"; };
+		2AC4989A277BA0A00029B490 /* chicken-fettuccine-alfredo-step-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-1.gif"; sourceTree = "<group>"; };
+		2AC4989B277BA0A00029B490 /* chicken-fettuccine-alfredo-step-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-5.gif"; sourceTree = "<group>"; };
+		2AC4989C277BA0A00029B490 /* chicken-fettuccine-alfredo-step-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-6.gif"; sourceTree = "<group>"; };
+		2AC4989D277BA0A00029B490 /* chicken-fettuccine-alfredo-step_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step_2.gif"; sourceTree = "<group>"; };
+		2AC4989E277BA0A10029B490 /* chicken-fettuccine-alfredo-step_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step_3.gif"; sourceTree = "<group>"; };
+		2AC4989F277BA0A10029B490 /* chicken-fettuccine-alfredo-step_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step_4.gif"; sourceTree = "<group>"; };
+		2AC498A7277BA95B0029B490 /* chicken-fettuccine-alfredo-step-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-11.gif"; sourceTree = "<group>"; };
+		2AC498A8277BA95B0029B490 /* chicken-fettuccine-alfredo-step_17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step_17.gif"; sourceTree = "<group>"; };
+		2AC498A9277BA95B0029B490 /* chicken-fettuccine-alfredo-step-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-12.gif"; sourceTree = "<group>"; };
+		2AC498AA277BA95C0029B490 /* chicken-fettuccine-alfredo-step-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-9.gif"; sourceTree = "<group>"; };
+		2AC498AB277BA95C0029B490 /* chicken-fettuccine-alfredo-step_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step_7.gif"; sourceTree = "<group>"; };
+		2AC498AC277BA95C0029B490 /* chicken-fettuccine-alfredo-step-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-13.gif"; sourceTree = "<group>"; };
+		2AC498AD277BA95C0029B490 /* chicken-fettuccine-alfredo-step-20.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-20.gif"; sourceTree = "<group>"; };
+		2AC498AE277BA95C0029B490 /* chicken-fettuccine-alfredo-step-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-15.gif"; sourceTree = "<group>"; };
+		2AC498AF277BA95D0029B490 /* chicken-fettuccine-alfredo-step-19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-19.gif"; sourceTree = "<group>"; };
+		2AC498B0277BA95D0029B490 /* chicken-fettuccine-alfredo-step-18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-18.gif"; sourceTree = "<group>"; };
+		2AC498B1277BA95D0029B490 /* chicken-fettuccine-alfredo-step-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-16.gif"; sourceTree = "<group>"; };
+		2AC498B2277BA95D0029B490 /* chicken-fettuccine-alfredo-step-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-8.gif"; sourceTree = "<group>"; };
+		2AC498B3277BA95D0029B490 /* chicken-fettuccine-alfredo-step-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-10.gif"; sourceTree = "<group>"; };
+		2AC498B4277BA95D0029B490 /* chicken-fettuccine-alfredo-step-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "chicken-fettuccine-alfredo-step-14.gif"; sourceTree = "<group>"; };
 		2ACE435B2745A69F0057C0D0 /* elota-step-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-step-8.gif"; sourceTree = "<group>"; };
 		2ACE435C2745A69F0057C0D0 /* elota-step-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "elota-step-10.gif"; sourceTree = "<group>"; };
+		2ADD07442783B0590063F55B /* sphaghetti-and-meatballs-step-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-5.gif"; sourceTree = "<group>"; };
+		2ADD07452783B0590063F55B /* sphaghetti-and-meatballs-step-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-6.gif"; sourceTree = "<group>"; };
+		2ADD07462783B0590063F55B /* sphaghetti-and-meatballs-step-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-3.gif"; sourceTree = "<group>"; };
+		2ADD07472783B0590063F55B /* sphaghetti-and-meatballs-step-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sphaghetti-and-meatballs-step-4.gif"; sourceTree = "<group>"; };
 		311669804765A61253C2A0F6 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		3FD3CE66B11A45CEFD14189E /* Pods-Cookbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookbook.release.xcconfig"; path = "Target Support Files/Pods-Cookbook/Pods-Cookbook.release.xcconfig"; sourceTree = "<group>"; };
 		4F4015854940688A1D85C412 /* Pods_Cookbook_CookbookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cookbook_CookbookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -427,6 +481,7 @@
 				2A64FDF426D8979F008E4806 /* MotherView.swift */,
 				2A55C43626C03FD6005851CD /* Recipe.swift */,
 				2A26CDF526B9DF6700A1B876 /* RecipePageView.swift */,
+				2A37FFCC278E662300F66F69 /* RecipeStepView.swift */,
 				0A93FE0727223E10002994E5 /* TableOfContentsPageView.swift */,
 				2A64FDF626D8983E008E4806 /* ViewRouter.swift */,
 			);
@@ -520,6 +575,8 @@
 		2A8CD66D271C87580082BC93 /* Giphs */ = {
 			isa = PBXGroup;
 			children = (
+				2AC498A6277BA0AB0029B490 /* Sphaghetti and meatballs */,
+				2AC49899277BA0850029B490 /* Chicken Fettuccine Alfredo */,
 				2ABED3C52743798E00334F6F /* Elota */,
 				2ABED3AA27436FF000334F6F /* Ram-Don */,
 				2A694ECE273851CC00910AA2 /* Butter Chicken */,
@@ -652,6 +709,46 @@
 				2ABED3CD2743799C00334F6F /* elota-step-19.gif */,
 			);
 			path = Elota;
+			sourceTree = "<group>";
+		};
+		2AC49899277BA0850029B490 /* Chicken Fettuccine Alfredo */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4989A277BA0A00029B490 /* chicken-fettuccine-alfredo-step-1.gif */,
+				2AC4989D277BA0A00029B490 /* chicken-fettuccine-alfredo-step_2.gif */,
+				2AC4989E277BA0A10029B490 /* chicken-fettuccine-alfredo-step_3.gif */,
+				2AC4989F277BA0A10029B490 /* chicken-fettuccine-alfredo-step_4.gif */,
+				2AC4989B277BA0A00029B490 /* chicken-fettuccine-alfredo-step-5.gif */,
+				2AC4989C277BA0A00029B490 /* chicken-fettuccine-alfredo-step-6.gif */,
+				2AC498AB277BA95C0029B490 /* chicken-fettuccine-alfredo-step_7.gif */,
+				2AC498B2277BA95D0029B490 /* chicken-fettuccine-alfredo-step-8.gif */,
+				2AC498AA277BA95C0029B490 /* chicken-fettuccine-alfredo-step-9.gif */,
+				2AC498B3277BA95D0029B490 /* chicken-fettuccine-alfredo-step-10.gif */,
+				2AC498A7277BA95B0029B490 /* chicken-fettuccine-alfredo-step-11.gif */,
+				2AC498A9277BA95B0029B490 /* chicken-fettuccine-alfredo-step-12.gif */,
+				2AC498AC277BA95C0029B490 /* chicken-fettuccine-alfredo-step-13.gif */,
+				2AC498B4277BA95D0029B490 /* chicken-fettuccine-alfredo-step-14.gif */,
+				2AC498AE277BA95C0029B490 /* chicken-fettuccine-alfredo-step-15.gif */,
+				2AC498B1277BA95D0029B490 /* chicken-fettuccine-alfredo-step-16.gif */,
+				2AC498A8277BA95B0029B490 /* chicken-fettuccine-alfredo-step_17.gif */,
+				2AC498B0277BA95D0029B490 /* chicken-fettuccine-alfredo-step-18.gif */,
+				2AC498AF277BA95D0029B490 /* chicken-fettuccine-alfredo-step-19.gif */,
+				2AC498AD277BA95C0029B490 /* chicken-fettuccine-alfredo-step-20.gif */,
+			);
+			path = "Chicken Fettuccine Alfredo";
+			sourceTree = "<group>";
+		};
+		2AC498A6277BA0AB0029B490 /* Sphaghetti and meatballs */ = {
+			isa = PBXGroup;
+			children = (
+				2A0DE83427825045005367C1 /* sphaghetti-and-meatballs-step-1.gif */,
+				2A0DE83327825045005367C1 /* sphaghetti-and-meatballs-step-2.gif */,
+				2ADD07462783B0590063F55B /* sphaghetti-and-meatballs-step-3.gif */,
+				2ADD07472783B0590063F55B /* sphaghetti-and-meatballs-step-4.gif */,
+				2ADD07442783B0590063F55B /* sphaghetti-and-meatballs-step-5.gif */,
+				2ADD07452783B0590063F55B /* sphaghetti-and-meatballs-step-6.gif */,
+			);
+			path = "Sphaghetti and meatballs";
 			sourceTree = "<group>";
 		};
 		55E3D0BC05D9671AD28D400A /* AmplifyConfig */ = {
@@ -796,9 +893,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABED3DF2743799D00334F6F /* elota-step-11.gif in Resources */,
+				2AC498BD277BA95D0029B490 /* chicken-fettuccine-alfredo-step-19.gif in Resources */,
 				2ABED3D72743799D00334F6F /* elota-step-13.gif in Resources */,
 				2A91B0A9275D51B900C3C5AE /* ram-don-static-step-5.jpg in Resources */,
 				2ABED3B82743700500334F6F /* ram-don-step-7.gif in Resources */,
+				2AC498BC277BA95D0029B490 /* chicken-fettuccine-alfredo-step-15.gif in Resources */,
 				2ABC30DA275C3CA700DDF4B1 /* elota-static-step-13.jpg in Resources */,
 				0A79E37E2720D92B00F36D00 /* soft-tofu-soup-step-5.gif in Resources */,
 				2ABED38F274197DA00334F6F /* chicken-potatoes-step-21.gif in Resources */,
@@ -807,7 +906,9 @@
 				2ABED399274197DA00334F6F /* chicken-potatoes-step-10.gif in Resources */,
 				2ABED394274197DA00334F6F /* chicken-potatoes-step-20.gif in Resources */,
 				2A26CDFB26B9DF6900A1B876 /* Preview Assets.xcassets in Resources */,
+				2ADD074B2783B0590063F55B /* sphaghetti-and-meatballs-step-4.gif in Resources */,
 				2ABED39E274197DA00334F6F /* chicken-potatoes-step-17.gif in Resources */,
+				2AC498BB277BA95D0029B490 /* chicken-fettuccine-alfredo-step-20.gif in Resources */,
 				2ABED3A1274197DA00334F6F /* chicken-potatoes-step-26.gif in Resources */,
 				0A79E3802721D13900F36D00 /* soft-tofu-soup-step-6.gif in Resources */,
 				2ABC30C2275C37C400DDF4B1 /* elota-static-step-1.jpg in Resources */,
@@ -816,11 +917,13 @@
 				2ABC30E1275C3CA700DDF4B1 /* elota-static-step-7.jpg in Resources */,
 				2A18A3EE2731BBE200D47866 /* butter-chicken-step-15.gif in Resources */,
 				2ABC30E0275C3CA700DDF4B1 /* elota-static-step-9.jpg in Resources */,
+				2AC498BF277BA95D0029B490 /* chicken-fettuccine-alfredo-step-16.gif in Resources */,
 				2ABED391274197DA00334F6F /* chicken-potatoes-step-11.gif in Resources */,
 				2ABED39D274197DA00334F6F /* chicken-potatoes-step-5.gif in Resources */,
 				2A18A3D82731B5BB00D47866 /* butter-chicken-step-4.gif in Resources */,
 				2ABED3A0274197DA00334F6F /* chicken-potatoes-step-25.gif in Resources */,
 				2A8CD67D271F52F60082BC93 /* chopping-white-onion.gif in Resources */,
+				2ADD07492783B0590063F55B /* sphaghetti-and-meatballs-step-6.gif in Resources */,
 				2ABED3E22743799D00334F6F /* elota-step-9.gif in Resources */,
 				2ABC30E2275C3CA700DDF4B1 /* elota-static-step-3.jpg in Resources */,
 				2ABED39C274197DA00334F6F /* chicken-potatoes-step-12.gif in Resources */,
@@ -831,16 +934,21 @@
 				2ABED3C22743700500334F6F /* ram-don-step-5.gif in Resources */,
 				2A18A3FA2731BF2100D47866 /* butter-chicken-step-21.gif in Resources */,
 				2A18A3E22731B8F200D47866 /* butter-chicken-step-9.gif in Resources */,
+				2AC498BE277BA95D0029B490 /* chicken-fettuccine-alfredo-step-18.gif in Resources */,
 				0A79E3842721D46300F36D00 /* soft-tofu-soup-step-8.gif in Resources */,
+				2AC498B5277BA95D0029B490 /* chicken-fettuccine-alfredo-step-11.gif in Resources */,
 				2A26CDF826B9DF6900A1B876 /* Assets.xcassets in Resources */,
 				0A79E3882721D88300F36D00 /* soft-tofu-soup-step-10.gif in Resources */,
 				2ABED3E52743799D00334F6F /* elota-step-6.gif in Resources */,
+				2AC498A1277BA0A10029B490 /* chicken-fettuccine-alfredo-step-5.gif in Resources */,
 				2ABED39F274197DA00334F6F /* chicken-potatoes-step-19.gif in Resources */,
 				2A8CD679271F52CC0082BC93 /* add-sugar.gif in Resources */,
+				2A0DE83627825045005367C1 /* sphaghetti-and-meatballs-step-1.gif in Resources */,
 				2A18A3DE2731B7E900D47866 /* butter-chicken-step-7.gif in Resources */,
 				2A18A3E02731B85400D47866 /* butter-chicken-step-8.gif in Resources */,
 				2A8CD673271CC06E0082BC93 /* mince-pork.gif in Resources */,
 				2A18A3E82731BA9000D47866 /* butter-chicken-step-12.gif in Resources */,
+				2AC498C0277BA95D0029B490 /* chicken-fettuccine-alfredo-step-8.gif in Resources */,
 				2A684DE32759966E00676D36 /* chicken-potatoes-step-8.gif in Resources */,
 				2ABC30DD275C3CA700DDF4B1 /* elota-static-step-11.jpg in Resources */,
 				2A91B0AA275D51B900C3C5AE /* ram-don-static-step-2.jpg in Resources */,
@@ -855,6 +963,7 @@
 				2ABED3E12743799D00334F6F /* elota-step-7.gif in Resources */,
 				2ABC30D8275C3CA700DDF4B1 /* elota-static-step-15.jpg in Resources */,
 				2A694EC727384F9000910AA2 /* soft-tofu-soup-step-14.gif in Resources */,
+				2AC498B7277BA95D0029B490 /* chicken-fettuccine-alfredo-step-12.gif in Resources */,
 				2A18A3EA2731BAF300D47866 /* butter-chicken-step-13.gif in Resources */,
 				2ABC30DE275C3CA700DDF4B1 /* elota-static-step-18.jpg in Resources */,
 				2ABED3D82743799D00334F6F /* elota-step-3.gif in Resources */,
@@ -862,6 +971,7 @@
 				2ABED3C42743700500334F6F /* ram-don-step-8.gif in Resources */,
 				2ABED3E62743799D00334F6F /* elota-step-2.gif in Resources */,
 				2ABED3DC2743799D00334F6F /* elota-step-12.gif in Resources */,
+				2AC498BA277BA95D0029B490 /* chicken-fettuccine-alfredo-step-13.gif in Resources */,
 				2ABC30DB275C3CA700DDF4B1 /* elota-static-step-19.jpg in Resources */,
 				2A18A3E42731B97300D47866 /* butter-chicken-step-10.gif in Resources */,
 				2A18A3FC2731BF9400D47866 /* butter-chicken-step-22.gif in Resources */,
@@ -879,7 +989,10 @@
 				2ABC30E5275C3CA700DDF4B1 /* elota-static-step-14.jpg in Resources */,
 				2ABED3C02743700500334F6F /* ram-don-step-12.gif in Resources */,
 				2A91B0A8275D51B900C3C5AE /* ram-don-static-step-12.jpg in Resources */,
+				2AC498B6277BA95D0029B490 /* chicken-fettuccine-alfredo-step_17.gif in Resources */,
 				2A91B0A7275D51B900C3C5AE /* ram-don-static-step-6.jpg in Resources */,
+				2A0DE83527825045005367C1 /* sphaghetti-and-meatballs-step-2.gif in Resources */,
+				2AC498A4277BA0A10029B490 /* chicken-fettuccine-alfredo-step_3.gif in Resources */,
 				2ABED3BA2743700500334F6F /* ram-don-step-3.gif in Resources */,
 				2ABED3BF2743700500334F6F /* ram-don-step-1.gif in Resources */,
 				2ABED3E42743799D00334F6F /* elota-step-5.gif in Resources */,
@@ -890,9 +1003,11 @@
 				2ABED3A3274197DA00334F6F /* chicken-potatoes-step-16.gif in Resources */,
 				2A18A3FE2731C04600D47866 /* butter-chicken-step-23.gif in Resources */,
 				2ACE435E2745A69F0057C0D0 /* elota-step-8.gif in Resources */,
+				2AC498A0277BA0A10029B490 /* chicken-fettuccine-alfredo-step-1.gif in Resources */,
 				2ABC30D9275C3CA700DDF4B1 /* elota-static-step-8.jpg in Resources */,
 				2ABED39B274197DA00334F6F /* chicken-potatoes-step-9.gif in Resources */,
 				2A8CD67B271F52DA0082BC93 /* oil-pan.gif in Resources */,
+				2AC498A5277BA0A10029B490 /* chicken-fettuccine-alfredo-step_4.gif in Resources */,
 				2ABED3E32743799D00334F6F /* elota-step-16.gif in Resources */,
 				2ABED3DA2743799D00334F6F /* elota-step-15.gif in Resources */,
 				2ABED392274197DA00334F6F /* chicken-potatoes-step-18.gif in Resources */,
@@ -903,8 +1018,10 @@
 				2ABED3C12743700500334F6F /* ram-don-step-6.gif in Resources */,
 				2ABC30DC275C3CA700DDF4B1 /* elota-static-step-10.jpg in Resources */,
 				2A18A3F62731BE1500D47866 /* butter-chicken-step-19.gif in Resources */,
+				2AC498B9277BA95D0029B490 /* chicken-fettuccine-alfredo-step_7.gif in Resources */,
 				2A18A3F82731BE9400D47866 /* butter-chicken-step-20.gif in Resources */,
 				2ABED393274197DA00334F6F /* chicken-potatoes-step-22.gif in Resources */,
+				2ADD074A2783B0590063F55B /* sphaghetti-and-meatballs-step-3.gif in Resources */,
 				2A91B0A5275D51B900C3C5AE /* ram-don-static-step-10.jpg in Resources */,
 				2A91B0AC275D51B900C3C5AE /* ram-don-static-step-9.jpg in Resources */,
 				2A694EC527384F0500910AA2 /* soft-tofu-soup-step-13.gif in Resources */,
@@ -920,20 +1037,26 @@
 				2ABED395274197DA00334F6F /* chicken-potatoes-step-3.gif in Resources */,
 				2A91B0AD275D51B900C3C5AE /* ram-don-static-step-4.jpg in Resources */,
 				0A79E3822721D2EA00F36D00 /* soft-tofu-soup-step-7.gif in Resources */,
+				2ADD07482783B0590063F55B /* sphaghetti-and-meatballs-step-5.gif in Resources */,
 				2A91B0A3275D51B900C3C5AE /* ram-don-static-step-13.jpg in Resources */,
 				2A18A3F02731BC7300D47866 /* butter-chicken-step-16.gif in Resources */,
 				2A18A4042731C19E00D47866 /* butter-chicken-step-26.gif in Resources */,
+				2AC498C2277BA95D0029B490 /* chicken-fettuccine-alfredo-step-14.gif in Resources */,
 				2ABED3BB2743700500334F6F /* ram-don-step-10.gif in Resources */,
 				2ABED3A9274197DA00334F6F /* chicken-potatoes-step-24.gif in Resources */,
 				2ABC30D6275C3CA700DDF4B1 /* elota-static-step-5.jpg in Resources */,
 				2A18A3D62731B50600D47866 /* butter-chicken-step-3.gif in Resources */,
 				2ABED39A274197DA00334F6F /* chicken-potatoes-step-4.gif in Resources */,
+				2AC498A3277BA0A10029B490 /* chicken-fettuccine-alfredo-step_2.gif in Resources */,
 				2ABED3A2274197DA00334F6F /* chicken-potatoes-step-27.gif in Resources */,
 				0A79E37C2720D78000F36D00 /* soft-tofu-soup-step-4.gif in Resources */,
+				2AC498A2277BA0A10029B490 /* chicken-fettuccine-alfredo-step-6.gif in Resources */,
 				2A91B0A4275D51B900C3C5AE /* ram-don-static-step-3.jpg in Resources */,
 				2A8CD67F271FD4E20082BC93 /* green-onion.gif in Resources */,
+				2AC498B8277BA95D0029B490 /* chicken-fettuccine-alfredo-step-9.gif in Resources */,
 				2A694EC92738501700910AA2 /* soft-tofu-soup-step-15.gif in Resources */,
 				2A8CD683271FD8BC0082BC93 /* soft-tofu-soup-step-2.gif in Resources */,
+				2AC498C1277BA95D0029B490 /* chicken-fettuccine-alfredo-step-10.gif in Resources */,
 				2ABED3A6274197DA00334F6F /* chicken-potatoes-step-14.gif in Resources */,
 				2ABED3E72743799D00334F6F /* elota-step-18.gif in Resources */,
 				2ABED3A4274197DA00334F6F /* chicken-potatoes-step-23.gif in Resources */,
@@ -1091,6 +1214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A37FFCD278E662400F66F69 /* RecipeStepView.swift in Sources */,
 				2A4F6B1827509268004BB1BB /* AppDelegate.swift in Sources */,
 				2A0DB2B1270D3C99000F9E88 /* Ingredient.swift in Sources */,
 				2A26CDF626B9DF6700A1B876 /* RecipePageView.swift in Sources */,

@@ -9,13 +9,11 @@ import Foundation
 
 class Ingredient {
     var name: String
-    var quantity: Int
-    var type: String
+    var quantity: Double
     var unitOfMeasurement: String
     
-    init(name: String, type: String, quantity: Int, unitOfMeasurement: String) {
+    init(name: String, quantity: Double, unitOfMeasurement: String) {
         self.name = name
-        self.type = type
         self.quantity = quantity
         self.unitOfMeasurement = unitOfMeasurement
     }

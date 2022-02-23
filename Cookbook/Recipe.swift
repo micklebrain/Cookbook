@@ -10,18 +10,18 @@ import SwiftUI
 
 class Recipe {
     var coverImage: String
-    var produceAndDairy: [String]
+    var produceAndDairy: [Ingredient]
     var name: String
     var recipeSteps: [RecipeStep]
-    var spicesAndHerbs: [String]
-    var vegetables: [String]
+    var spicesAndHerbs: [Ingredient]
+    var vegetables: [Ingredient]
     
     init(coverImage: String,
-         produceAndDairy: [String],
+         produceAndDairy: [Ingredient],
          name: String,
          recipeSteps: [RecipeStep],
-         spices: [String] = [""],
-         vegetables: [String] = [""]) {
+         spices: [Ingredient] = [],
+         vegetables: [Ingredient] = []) {
         self.coverImage = coverImage
         self.name = name
         self.produceAndDairy = produceAndDairy
