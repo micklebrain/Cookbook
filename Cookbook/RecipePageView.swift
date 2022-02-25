@@ -48,29 +48,36 @@ struct RecipePageView: View {
                     Text("Ingredients").fontWeight(.bold).padding()
                     
 //                    Text("Produce 🥩 & Dairy 🐮").fontWeight(.bold).padding()
-                    ForEach(1..<recipe.produceAndDairy.count) { i in
+                    ForEach(0..<recipe.produceAndDairy.count) { i in
                         HStack {
                             Text("\(recipe.produceAndDairy[i].name)").padding(.leading, 8)
                             Spacer()
-                            Text(String(format: "%.1f", recipe.produceAndDairy[i].quantity) + " \(recipe.produceAndDairy[i].unitOfMeasurement)").padding(.trailing, 8)
+                            if (recipe.produceAndDairy[i].quantity != 0.0) {
+                                Text(formatQuanity(amount:recipe.produceAndDairy[i].quantity) + " \(recipe.produceAndDairy[i].unitOfMeasurement)").padding(.trailing, 8)
+                            }
                         }
                     }
                     
 //                    Text("Spices 🌶 & Herbs 🌿").fontWeight(.bold).padding()
-                    ForEach(1..<recipe.spicesAndHerbs.count) { i in
+                    ForEach(0..<recipe.spicesAndHerbs.count) { i in
                         HStack {
                             Text("\(recipe.spicesAndHerbs[i].name)").padding(.leading, 8)
                             Spacer()
-                            Text(String(format: "%.1f", recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
+                            if (recipe.spicesAndHerbs[i].quantity != 0.0) {
+//                                Text(String(format: "%.1f", recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
+                                Text(formatQuanity(amount: recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
+                            }
                         }
                     }
                     
 //                    Text("Vegetables 🍅").fontWeight(.bold).padding()
-                    ForEach(1..<recipe.vegetables.count) { i in
+                    ForEach(0..<recipe.vegetables.count) { i in
                         HStack {
                             Text("\(recipe.vegetables[i].name)").padding(.leading, 8)
                             Spacer()
-                            Text(String(format: "%.1f", recipe.vegetables[i].quantity) + " \(recipe.vegetables[i].unitOfMeasurement)").padding(.trailing, 8)
+                            if (recipe.vegetables[i].quantity != 0.0) {
+                                Text(formatQuanity(amount: recipe.vegetables[i].quantity) + " \(recipe.vegetables[i].unitOfMeasurement)").padding(.trailing, 8)
+                            }
                         }
                     }
                     
@@ -107,6 +114,17 @@ struct RecipePageView: View {
                                                 
             }
         }
+    }
+    
+    private func formatQuanity(amount: Double) -> String {
+        let formattedAmount = String(format: "%.1f", amount)
+        if (formattedAmount.suffix(2) == ".0") {
+            return String(formattedAmount.dropLast(2))
+        }
+        if (formattedAmount.prefix(2) == "0.") {
+            return String(formattedAmount.dropFirst(2))
+        }
+        return formattedAmount
     }
     
     private func jumpToStep() {
