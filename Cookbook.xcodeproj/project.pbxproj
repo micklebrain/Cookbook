@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,8 @@
 		2A694EC92738501700910AA2 /* soft-tofu-soup-step-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A694EC82738501700910AA2 /* soft-tofu-soup-step-15.gif */; };
 		2A694ECB273850BF00910AA2 /* soft-tofu-soup-step-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A694ECA273850BF00910AA2 /* soft-tofu-soup-step-16.gif */; };
 		2A694ECD2738514F00910AA2 /* soft-tofu-soup-step-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A694ECC2738514F00910AA2 /* soft-tofu-soup-step-17.gif */; };
+		2A7EE87227DD50FC0040AB4F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2A7EE87127DD50FC0040AB4F /* Realm */; };
+		2A7EE87427DD50FC0040AB4F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A7EE87327DD50FC0040AB4F /* RealmSwift */; };
 		2A8BB5CB27C980CA009845C7 /* chicken-fettuccine-alfredo-step-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8BB5C827C980CA009845C7 /* chicken-fettuccine-alfredo-step-2.gif */; };
 		2A8BB5CC27C980CA009845C7 /* chicken-fettuccine-alfredo-step-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8BB5C927C980CA009845C7 /* chicken-fettuccine-alfredo-step-4.gif */; };
 		2A8BB5CD27C980CA009845C7 /* chicken-fettuccine-alfredo-step-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A8BB5CA27C980CA009845C7 /* chicken-fettuccine-alfredo-step-3.gif */; };
@@ -419,6 +421,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7EE87427DD50FC0040AB4F /* RealmSwift in Frameworks */,
+				2A7EE87227DD50FC0040AB4F /* Realm in Frameworks */,
 				ED56613678FDEF218456BE45 /* Pods_Cookbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,6 +806,10 @@
 			dependencies = (
 			);
 			name = Cookbook;
+			packageProductDependencies = (
+				2A7EE87127DD50FC0040AB4F /* Realm */,
+				2A7EE87327DD50FC0040AB4F /* RealmSwift */,
+			);
 			productName = Cookbook;
 			productReference = 2A26CDF026B9DF6700A1B876 /* Cookbook.app */;
 			productType = "com.apple.product-type.application";
@@ -876,6 +884,9 @@
 				Base,
 			);
 			mainGroup = 2A26CDE726B9DF6700A1B876;
+			packageReferences = (
+				2A7EE87027DD50FC0040AB4F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 2A26CDF126B9DF6700A1B876 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1311,7 +1322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1366,7 +1377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1548,6 +1559,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A7EE87027DD50FC0040AB4F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A7EE87127DD50FC0040AB4F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A7EE87027DD50FC0040AB4F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2A7EE87327DD50FC0040AB4F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A7EE87027DD50FC0040AB4F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A26CDE826B9DF6700A1B876 /* Project object */;
 }

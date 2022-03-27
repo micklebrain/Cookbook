@@ -9,9 +9,8 @@ import SwiftUI
 
 @main
 struct CookbookApp: App {
-    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
+        
     @StateObject var cookbook = Cookbook(recipes: [
         Recipe(coverImage: "butter-chicken",
                produceAndDairy: [

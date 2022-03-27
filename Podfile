@@ -8,10 +8,9 @@ target 'Cookbook' do
   pod 'Amplify/Tools'
   pod 'AmplifyPlugins/AWSS3StoragePlugin'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
-  
   pod 'AWSMobileClient'
   pod 'AWSPinpoint'
-
+  
   # Pods for Cookbook
 
   target 'CookbookTests' do
@@ -22,5 +21,4 @@ target 'Cookbook' do
   target 'CookbookUITests' do
     # Pods for testing
   end
-
 end
