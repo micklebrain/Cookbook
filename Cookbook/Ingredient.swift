@@ -34,7 +34,7 @@ enum Spices: String {
     case paprika = "paprika"
     case pepper = "pepper"
     case salt = "salt"
-    case tumeric = "tumeric"
+    case turmeric = "turmeric"
 }
 
 enum Vegetables: String {

@@ -21,25 +21,6 @@ struct TableOfContentsPageView: View {
         VStack {
             Text("Table of Contents").font(.largeTitle)
             var count = 0
-            
-            //            ForEach(cookbook.recipes, id: \.name) { recipe in
-            //                Button(action: {
-            //                    withAnimation{
-            //                        viewRouter.currentRecipePage = count
-            //                        viewRouter.currentPage = RecipePageView(title: recipe.name,
-            //                                                                recipe: recipe)
-            //                        count += 1
-            //                        viewRouter.homePage = false
-            //                    }
-            //                }, label: {
-            //                    Text(recipe.name).font(.title)
-            //                }).padding()
-            //                    .buttonStyle(.plain)
-            //                Image(recipe.coverImage)
-            //                    .resizable()
-            //                    .scaledToFit()
-            //            }
-            
             if #available(iOS 15.0, *) {
                 List(recipes, id: \.name) { recipe in
                     Button(action: {
@@ -61,10 +42,25 @@ struct TableOfContentsPageView: View {
                     await getRecipes()
                 }
             } else {
-                
+                ForEach(cookbook.recipes, id: \.name) { recipe in
+                    Button(action: {
+                        withAnimation{
+                            viewRouter.currentRecipePage = count
+                            viewRouter.currentPage = RecipePageView(title: recipe.name,
+                                                                    recipe: recipe)
+                            count += 1
+                            viewRouter.homePage = false
+                        }
+                    }, label: {
+                        Text(recipe.name).font(.title)
+                    }).padding()
+                        .buttonStyle(.plain)
+                    Image(recipe.coverImage)
+                        .resizable()
+                        .scaledToFit()
+                }
             }
         }
-        // }
     }
     
     @available(iOS 15.0.0, *)
@@ -81,11 +77,26 @@ struct TableOfContentsPageView: View {
                 if let recipesResponse = json!["doc"] as? Array<Any> {
                     var allRecipes = [Recipe]()
                     for recipe in recipesResponse {
-                        let cookbookRecipe = recipe as! [String: String]
-                        allRecipes.append(Recipe(coverImage: cookbookRecipe["coverImage"]!,
-                                                 produceAndDairy: [],
-                                                 name: cookbookRecipe["name"]!,
-                                                 recipeSteps: []))
+                        let cookbookRecipe = recipe as! [String: Any]
+                        var steps = [RecipeStep]()
+                        if let recipeSteps = cookbookRecipe["recipeSteps"] {
+                            for recipe in recipeSteps as! [String] {
+                                steps.append(RecipeStep(title: recipe))
+                            }
+                        }
+                        var allIngredient = [Ingredient]()
+                        if let ingredientsResponse = cookbookRecipe["ingredients"] {
+                            for ingredient in ingredientsResponse as! Array<Any> {
+                                let singleIngredient = ingredient as! [String: Any]
+                                allIngredient.append(Ingredient(name: singleIngredient["name"] as! String,
+                                                                quantity: singleIngredient["quantity"] as! Double,
+                                                                unitOfMeasurement: singleIngredient["unitOfMeasurement"] as! String))
+                            }
+                        }
+                        allRecipes.append(Recipe(coverImage: cookbookRecipe["coverImage"] as! String,
+                                                 produceAndDairy: allIngredient,
+                                                 name: cookbookRecipe["name"] as! String,
+                                                 recipeSteps: steps))
                     }
                     self.recipes = allRecipes
                     self.recipes.sort(by: { $0.name < $1.name })

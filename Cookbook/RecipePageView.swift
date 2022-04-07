@@ -26,12 +26,12 @@ struct RecipePageView: View {
             
             ScrollViewReader { scrollView in
                 
-  // Numbers to jump to steps
-//                ForEach(1..<recipe.recipeSteps.count) { index in
-//                    Button("Jump to \(index)") {
-//                        scrollView.scrollTo(index)
-//                    }
-//                }
+                // Numbers to jump to steps
+                //                ForEach(1..<recipe.recipeSteps.count) { index in
+                //                    Button("Jump to \(index)") {
+                //                        scrollView.scrollTo(index)
+                //                    }
+                //                }
                 
                 Button(action: {
                     withAnimation {
@@ -47,7 +47,7 @@ struct RecipePageView: View {
                     
                     Text("Ingredients").fontWeight(.bold).padding()
                     
-//                    Text("Produce 🥩 & Dairy 🐮").fontWeight(.bold).padding()
+                    //                    Text("Produce 🥩 & Dairy 🐮").fontWeight(.bold).padding()
                     ForEach(0..<recipe.produceAndDairy.count) { i in
                         HStack {
                             Text("\(recipe.produceAndDairy[i].name)").padding(.leading, 8)
@@ -58,19 +58,19 @@ struct RecipePageView: View {
                         }
                     }
                     
-//                    Text("Spices 🌶 & Herbs 🌿").fontWeight(.bold).padding()
+                    //                    Text("Spices 🌶 & Herbs 🌿").fontWeight(.bold).padding()
                     ForEach(0..<recipe.spicesAndHerbs.count) { i in
                         HStack {
                             Text("\(recipe.spicesAndHerbs[i].name)").padding(.leading, 8)
                             Spacer()
                             if (recipe.spicesAndHerbs[i].quantity != 0.0) {
-//                                Text(String(format: "%.1f", recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
+                                //                                Text(String(format: "%.1f", recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
                                 Text(formatQuanity(amount: recipe.spicesAndHerbs[i].quantity) + " \(recipe.spicesAndHerbs[i].unitOfMeasurement)").padding(.trailing, 8)
                             }
                         }
                     }
                     
-//                    Text("Vegetables 🍅").fontWeight(.bold).padding()
+                    //                    Text("Vegetables 🍅").fontWeight(.bold).padding()
                     ForEach(0..<recipe.vegetables.count) { i in
                         HStack {
                             Text("\(recipe.vegetables[i].name)").padding(.leading, 8)
@@ -98,7 +98,7 @@ struct RecipePageView: View {
                                 }).id(index)
                         }
                     }
-
+                    
                 })
                 
                 // Synchronous load images from device
@@ -111,7 +111,7 @@ struct RecipePageView: View {
                 //                        }
                 //                    }
                 //                }
-                                                
+                
             }
         }
     }
